@@ -1,0 +1,367 @@
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax_group {
+  position: relative;
+  height: 110vh;
+  min-height:1000px;
+  transform-style: preserve-3d;
+}
+.parallax_layer {
+  position: absolute;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 102%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;  
+}
+.parallax .group1{ /*mountains*/
+  z-index:-5;
+}
+
+.parallax .group2{ /*welcome/timeline - brown*/
+  z-index: 0;
+  height: 270vh;
+}
+
+.parallax .group3{ /*ocean*/
+  z-index:-10;
+}
+.parallax .group4{ /*about us - dark blue*/
+  z-index: 0;
+  height: 220vh;
+}
+.parallax .group5{ /*stars*/
+  z-index:5;
+}
+.parallax .group6{ /*gallery - dark blue*/
+  z-index:10;
+  height: 220vh;
+}
+.parallax .group7{ /*bike*/
+  z-index:4;
+}
+.parallax .group8{ /*wedding info - green*/
+  z-index:9;
+  height: 220vh;
+}
+.parallax .group9{ /*city*/
+  z-index:0;
+}
+
+.parallax_layer--mountain1 {
+  transform: translateZ(-2px) scale(3);
+  background-image: url("../img/mountain/layer_1.png");
+  z-index:-10;
+  position:fixed;
+  background-size: cover;
+  width:102%;
+}
+.parallax_layer--mountain2 {
+  background-image: url("../img/mountain/layer_2.png");
+  transform: translateZ(-1.3px) scale(2.3);
+  z-index:-9;  
+  position:fixed;
+}
+.parallax_layer--mountain3{
+  background-image: url("../img/mountain/layer_3.png");
+  transform: translateZ(-1px) scale(2);
+  z-index:-8; 
+  position:fixed;
+}
+.parallax_layer--mountain4 {
+  transform: translateZ(-0.7px) scale(1.7);
+  background-image: url("../img/mountain/layer_4.png");
+  z-index:-7; 
+  position:fixed;
+}
+.parallax_layer--mountain5 {
+  background-image: url("../img/mountain/layer_5.png");
+  z-index:-5; 
+  position:fixed;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.slide1{
+  background-color: #140b00;
+  width: 100%;
+  height:270vh;
+  z-index:0;
+}
+.slide-content{
+  background-color: #140b00;
+  color:white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 220px;
+  padding-bottom:100px;
+  font-family: "Arial";
+  line-height: 40px;
+}
+.slide2{
+  background-color: #0b0d21;
+  width: 100%;
+  height: 200vh;
+}
+.slide3{
+  background-color: #080d1c;
+  background: -webkit-linear-gradient(#080d1c, #478bd8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#080d1c, #478bd8); /* For Opera 11.1 to 12.0  */
+  background: -moz-linear-gradient(#080d1c, #478bd8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#080d1c, #478bd8); /* Standard syntax */ 
+  /* google css gradient generators*/
+  width: 100%;
+  height: 220vh;
+}
+.slide4{
+  background-color: #021000;
+  width: 100%;
+  height: 220vh;
+}
+
+.slide5{
+  background-color: #521d13;
+  width: 100%;
+  height: 220vh;
+}
+
+h1 {
+    font-size: 26px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+/*Ocean parallax layers*/
+
+.parallax_layer--ocean1 {
+  transform: translateZ(-2.3px) scale(3.3);
+  background-image: url("../img/ocean/layer_1.png");
+  z-index:-5;
+  position:fixed;
+  background-size: cover;
+  width:102%;
+}
+.parallax_layer--ocean2 {
+  background-image: url("../img/ocean/layer_2.png");
+  transform: translateZ(-2px) scale(3);
+  z-index:-4;
+  position:fixed;
+}
+.parallax_layer--ocean3a {
+  background-image: url("../img/ocean/layer_3a.png");
+  transform: translateZ(-1.6px) scale(2.6);
+  z-index:-3;
+  position:fixed;
+}
+.parallax_layer--ocean3b {
+  background-image: url("../img/ocean/layer_3b.png");
+  transform: translateZ(-1.3px) scale(2.3);
+  z-index:-3;
+  position:fixed;
+}
+.parallax_layer--ocean4 {
+  transform: translateZ(-1px) scale(2);
+  background-image: url("../img/ocean/layer_4.png");
+  z-index:-2;
+  position:fixed;
+}
+.parallax_layer--ocean5 {
+  background-image: url("../img/ocean/layer_5.png");
+  z-index:-1;
+  position:fixed;
+  top:-140px;
+}
+.parallax_layer--ocean6 {
+  background-image: url("../img/ocean/layer_6.png");
+  z-index:-4;
+  transform: translateZ(-1.5px) scale(2.5);
+  position:fixed;
+  top:10px;
+}
+.parallax_layer--ocean7 {
+  background-image: url("../img/ocean/layer_7.png");
+  z-index:1;
+  transform: translateZ(-1px) scale(2);
+  position:fixed;
+  top:20px;
+}
+.parallax_layer--ocean8 {
+  background-image: url("../img/ocean/layer_8.png");
+  z-index:2;
+  position:fixed;
+}
+
+/* Star Parallax layers */
+
+.parallax_layer--star1 {
+  transform: translateZ(-1.75px) scale(2.75);
+  background-image: url("../img/star/layer_1.png");
+  z-index:-5;
+  position:fixed;
+  background-size: cover;
+  width:102%;
+}
+.parallax_layer--star2 {
+  background-image: url("../img/star/layer_2.png");
+  transform: translateZ(-1.25px) scale(2.25);
+  z-index:-4;
+  position:fixed;
+}
+.parallax_layer--star3 {
+  background-image: url("../img/star/layer_3.png");
+  transform: translateZ(-1px) scale(2);
+  z-index:-3;
+  position:fixed;
+}
+.parallax_layer--star4 {
+  background-image: url("../img/star/layer_4.png");
+  z-index:-2;
+  position:fixed;
+  /*top:-30px;*/
+}
+.parallax_layer--star5 {
+  background-image: url("../img/star/layer_5.png");
+  z-index:-4;
+  transform: translateZ(-.5px) scale(1.5);
+  position:fixed;
+}
+
+
+/* Bike parallax layers */
+
+.parallax_layer--bike1 {
+  transform: translateZ(-1.75px) scale(2.75);
+  background-image: url("../img/bike/layer_1.png");
+  z-index:-10;
+  position:fixed;
+  background-size: cover;
+  width:102%;
+}
+.parallax_layer--bike1b {
+  transform: translateZ(-1.5px) scale(2.5);
+  background-image: url("../img/bike/layer_1b.png");
+  z-index:-9;
+  position:fixed;
+  background-size: cover;
+  width:102%;
+}
+.parallax_layer--bike2 {
+  background-image: url("../img/bike/layer_2.png");
+  transform: translateZ(-1.3px) scale(2.3);
+  z-index:-8;
+  position:fixed;
+}
+.parallax_layer--bike2b {
+  transform: translateZ(-1px) scale(2);
+  background-image: url("../img/bike/layer_2b.png");
+  z-index:-7;
+  position:fixed;
+  background-size: cover;
+  width:102%;
+}
+.parallax_layer--bike3 {
+  background-image: url("../img/bike/layer_3.png");
+  transform: translateZ(-0.8px) scale(1.8);
+  z-index:-6;
+  position:fixed;
+}
+.parallax_layer--bike4 {
+  background-image: url("../img/bike/layer_4.png");
+  z-index:-5;
+  transform: translateZ(-.7px) scale(1.7);
+  position:fixed;
+}
+.parallax_layer--bike5a {
+  background-image: url("../img/bike/layer_5a.png");
+  z-index:-4;
+  transform: translateZ(-.5px) scale(1.5);
+  position:fixed;
+}
+.parallax_layer--bike5b {
+  background-image: url("../img/bike/layer_5b.png");
+  z-index:-3;
+  transform: translateZ(-.25px) scale(1.25);
+  position:fixed;
+}
+
+.parallax_layer--bike6 {
+  background-image: url("../img/bike/layer_6.png");
+  z-index:-2;
+  position:fixed;
+  transform: translateZ(-.25px) scale(1.25);
+/*  
+  transition: transform 5s ease-in-out;
+  -webkit-transition: 5s ease-in-out;
+    -moz-transition: 5s ease-in-out;
+    -o-transition: 5s ease-in-out;
+    transition: 5s ease-in-out;
+*/
+  
+}
+
+ .parallax_layer--bike6.bikes:hover {
+   /* -webkit-transform: translate3d(-400px, 380px, 0px) rotate(-7deg) scale(.5);
+    -moz-transform: translate3d(-800px, -50px, -.25px) scale(.25);
+    -o-transform: translate3d(-300px, -50px, -.25px) scale(.25);
+    -ms-transform: translate3d(-300px, -50px, -.25px) scale(.25);
+    transform: translate3d(-400px, 380px, 0px) rotate(-7deg) scale(.5);*/
+  }
+
+.parallax_layer--bike7 {
+  background-image: url("../img/bike/layer_7.png");
+  z-index:0;
+  position:fixed;
+}
+
+
+/* city parallax layers */
+
+.parallax_layer--city1 {
+  transform: translateZ(-2.5px) scale(3.5);
+  background-image: url("../img/city/layer_1.png");
+  z-index:1;
+  position:fixed;
+  background-size: cover;
+  width:102%;
+}
+.parallax_layer--city2 {
+  background-image: url("../img/city/layer_2.png");
+  transform: translateZ(-2px) scale(3);
+  z-index:2;
+  position:fixed;
+}
+.parallax_layer--city3 {
+  background-image: url("../img/city/layer_3.png");
+  transform: translateZ(-1.3px) scale(2.3);
+  z-index:3;
+  position:fixed;
+}
+.parallax_layer--city4 {
+  transform: translateZ(-.7px) scale(1.7);
+  background-image: url("../img/city/layer_4.png");
+  z-index:4;
+  position:fixed;
+}
+.parallax_layer--city5 {
+  background-image: url("../img/city/layer_5.png");
+   transform: translateZ(-.5px) scale(1.5);
+  z-index:5;
+  position:fixed;
+}
+.parallax_layer--city6 {
+  background-image: url("../img/city/layer_6.png");
+  z-index:6;
+  position:fixed;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tiff's Parallax Practice</title>
+
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/parallax_style.css">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="js/modernizr.js"></script>
+  </head>
+
+  <body>
+   <container>
+    <nav id="cd-vertical-nav">
+      <ul>
+        <li>
+          <a href="#section1" data-number="1">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Our Story</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section2" data-number="2">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Gallery</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section3" data-number="3">
+            <span class="cd-dot"></span>
+            <span class="cd-label">The Wedding</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section4" data-number="4">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Getting There</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section5" data-number="5">
+            <span class="cd-dot"></span>
+            <span class="cd-label">RSVP</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+   
+    <div class="parallax">
+      <div class = "parallax_group group1">
+        <div class="parallax_layer parallax_layer--mountain1"> </div>
+        <div class="parallax_layer parallax_layer--mountain2"> </div>
+        <div class="parallax_layer parallax_layer--mountain3"> </div>
+        <div class="parallax_layer parallax_layer--mountain4"> </div>
+        <div class="parallax_layer parallax_layer--mountain5"> </div>
+      </div>
+
+      <div class = "parallax_group group2">
+        <div class="slide1" >
+          <div class="slide-content">
+            <h1> TIFFANY and ALEX </h1>
+            <p> July 22, 2017 </p>
+            <p> Boulder Ridge, San Jose, California </p>
+          </div> 
+          <!---Insert Timeline here-->
+          <div class="timeline" id= "section1">
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax_group group3">
+        <div class="parallax_layer parallax_layer--ocean1"> </div>
+        <div class="parallax_layer parallax_layer--ocean2"> </div>
+        <div class="parallax_layer parallax_layer--ocean3a"> </div>
+        <div class="parallax_layer parallax_layer--ocean3b"> </div>
+        <div class="parallax_layer parallax_layer--ocean4"> </div>
+        <div class="parallax_layer parallax_layer--ocean5"> </div>
+        <div class="parallax_layer parallax_layer--ocean6"> </div>
+        <div class="parallax_layer parallax_layer--ocean7"> </div>
+        <div class="parallax_layer parallax_layer--ocean8"> </div>
+      </div>
+
+      <div class="parallax_group group4">
+            <div class="slide2" id="section2">
+              <!--insert About Us (childhood pics) here-->
+            </div>
+      </div>
+
+      <div class="parallax_group group5">
+        <div class="parallax_layer parallax_layer--star1"> </div>
+        <div class="parallax_layer parallax_layer--star2"> </div>
+        <div class="parallax_layer parallax_layer--star3"> </div>
+        <div class="parallax_layer parallax_layer--star4"> </div>
+        <div class="parallax_layer parallax_layer--star5"> </div>
+      </div>
+
+      <div class="parallax_group group6">
+            <div class="slide3" id="section3">
+              <!--insert Gallery here-->
+            </div>
+      </div>
+
+      <div class="parallax_group group7">
+        <div class="parallax_layer parallax_layer--bike1"> </div>
+        <div class="parallax_layer parallax_layer--bike1b"> </div>
+        <div class="parallax_layer parallax_layer--bike2"> </div>
+        <div class="parallax_layer parallax_layer--bike2b"> </div>
+        <div class="parallax_layer parallax_layer--bike3"> </div>
+        <div class="parallax_layer parallax_layer--bike4"> </div>
+        <div class="parallax_layer parallax_layer--bike5a"> </div>
+        <div class="parallax_layer parallax_layer--bike5b"> </div>
+        <div class="parallax_layer parallax_layer--bike6 bikes"> </div>
+        <div class="parallax_layer parallax_layer--bike7"> </div>
+      </div>
+
+      <div class="parallax_group group8">
+            <div class="slide4" id="section4">
+              <!--insert Wedding Info + registry here-->
+            </div>
+      </div>
+
+      <div class="parallax_group group9">
+          <div class="parallax_layer parallax_layer--city1"></div>
+          <div class="parallax_layer parallax_layer--city2"></div>
+          <div class="parallax_layer parallax_layer--city3"></div>
+          <div class="parallax_layer parallax_layer--city4"></div>
+          <div class="parallax_layer parallax_layer--city5"></div>
+          <div class="parallax_layer parallax_layer--city6"></div>
+      </div>
+
+      <div class="parallax_group group10">
+            <div class="slide5">
+              <!--insert RSVP here-->
+              <div class="spacer" > </div>
+
+               <iframe id= "section5" src="https://docs.google.com/forms/d/e/1FAIpQLSexI1exApMW65q6gZdKf3y-6iQzf_9vQ03vo-Qf6Wngo_N22g/viewform?embedded=true" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="tiff-alex-js.js"></script>
+</container>
+</body>
+</html>

@@ -27,7 +27,6 @@ $(document).ready(function(){
     //smooth scroll to the section
     navigationItems.on('click', function(event){
         event.preventDefault();
-        console.log('smooth scroll to this offset from top: ' + ($(this.hash)).offset().top);
         smoothScroll($(this.hash));
 
     });
@@ -35,7 +34,6 @@ $(document).ready(function(){
     $('.cd-scroll-down').on('click', function(event){
         event.preventDefault();
         smoothScroll($(this.hash));
-        console.log('second section scroll '+ $(this.hash))
     });
 
     //open-close navigation on touch devices

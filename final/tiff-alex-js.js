@@ -1,7 +1,8 @@
 
 $(document).ready(function(){
-    var contentSections = $('.cd-section'),
-        navigationItems = $('#cd-vertical-nav a');
+    var navigationItems = $('#cd-vertical-nav a'),
+        currentDistanceFromTop = 0,
+        targetTop = 0;
 
     var slickOptions = {
         dots: true,
@@ -19,20 +20,22 @@ $(document).ready(function(){
 
     //---------------------NAVIGATION----------------------//
     updateNavigation();
-    $(window).on('scroll', function(){
-        updateNavigation();
+    $('.parallax').on('scroll', function(){
+       updateNavigation();
+
     });
     //smooth scroll to the section
     navigationItems.on('click', function(event){
         event.preventDefault();
-        console.log('hash: '  + this.hash)
-        console.log($(this.hash))
+        console.log('smooth scroll to this offset from top: ' + ($(this.hash)).offset().top);
         smoothScroll($(this.hash));
+
     });
     //smooth scroll to second section
     $('.cd-scroll-down').on('click', function(event){
         event.preventDefault();
         smoothScroll($(this.hash));
+        console.log('second section scroll '+ $(this.hash))
     });
 
     //open-close navigation on touch devices
@@ -46,23 +49,16 @@ $(document).ready(function(){
     });
 
     function updateNavigation() {
-        contentSections.each(function(){
-            $this = $(this);
-            var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
-            if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
-                navigationItems.eq(activeSection).addClass('is-selected');
-            }else {
-                navigationItems.eq(activeSection).removeClass('is-selected');
-            }
-        });
+        currentDistanceFromTop = $('.parallax').scrollTop();
     }
 
     function smoothScroll(target) {
+        targetTop = target.offset().top + currentDistanceFromTop;
         $('.parallax').animate(
-            {'scrollTop': target.offset().top},
-            2000
+            {'scrollTop': targetTop},
+            1500
         );
-        console.log(target.offset().top)
+        currentDistanceFromTop = $('.parallax').scrollTop();
     }
 
     //--------------TIMELINE----------------//

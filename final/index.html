@@ -3,20 +3,30 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Tiff's Parallax Practice</title>
-
-
-    <!-- CSS  -->
+      
+      
+<!-- CSS  -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/parallax_style.css">
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
     <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
+
     <script src="js/modernizr.js"></script>
+
   </head>
 
   <body>
+<!--   ::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::  NAVIGATOR  :::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::::::::::::::::::::::::::: -->
    <container>
     <nav id="cd-vertical-nav">
       <ul>
@@ -35,13 +45,13 @@
         <li>
           <a href="#section3" data-number="3">
             <span class="cd-dot"></span>
-            <span class="cd-label">The Wedding</span>
+            <span class="cd-label">About</span>
           </a>
         </li>
         <li>
           <a href="#section4" data-number="4">
             <span class="cd-dot"></span>
-            <span class="cd-label">Getting There</span>
+            <span class="cd-label">The Wedding</span>
           </a>
         </li>
         <li>
@@ -54,7 +64,11 @@
     </nav>
 
     <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
-   
+   <!--   ::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::: PARALLAX BEGINS  :::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::::::::::::::::::::::::::: -->
     <div class="parallax">
       <div class = "parallax_group group1">
         <div class="parallax_layer parallax_layer--mountain1"> </div>
@@ -63,18 +77,28 @@
         <div class="parallax_layer parallax_layer--mountain4"> </div>
         <div class="parallax_layer parallax_layer--mountain5"> </div>
       </div>
-
+<!--   ::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::  welcome  :::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::::::::::::::::::::::::::: -->
       <div class = "parallax_group group2">
-        <div class="slide1" >
-          <div class="slide-content">
-            <h1> TIFFANY and ALEX </h1>
-            <p> July 22, 2017 </p>
-            <p> Boulder Ridge, San Jose, California </p>
+          <div class="intro" class="tiff-and-alex animated fadeInUp">
+            <h1> Tiffany and Alex </h1>
+            <h2> July 22, 2017 </h2>
+            <h2> Boulder Ridge, San Jose, California </h2>
+            <div class = "curly_divider">
+              <img src="img/curlies.png"> 
+            </div>
           </div> 
-          <!---Insert Timeline here-->
+
+<!--   ::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::  timeilne  :::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::::::::::::::::::::::::::: -->
           <div class="timeline" id= "section1">
           </div>
-        </div>
       </div>
 
       <div class="parallax_group group3">
@@ -90,8 +114,30 @@
       </div>
 
       <div class="parallax_group group4">
-            <div class="slide2" id="section2">
-              <!--insert About Us (childhood pics) here-->
+            <div id="section2">
+<!--   ::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::  gallery  :::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::::::::::::::::::::::::::: -->
+              <h1 class="explore"> Gallery </h1>
+                <div class="carousel" id="carousel">
+                  <div><img class="carousel-one" src="https://scontent.xx.fbcdn.net/v/t1.0-9/12705585_10101098638785864_2272683847029361724_n.jpg?oh=beca08a3e1fa6022b624029b0d4867d2&oe=58194CA5"></div>
+                  <div><img class="carousel-two" src="https://scontent-sjc2-1.xx.fbcdn.net/t31.0-8/13220627_10101179634340124_8512027569599654384_o.jpg"></div>
+                  <div><img class="carousel-three" src="https://scontent-sjc2-1.xx.fbcdn.net/t31.0-8/13198615_10101179633312184_1948078396080666944_o.jpg"></div>
+                  <div><img class="carousel-four" src="img/rsvpbg.jpg"></div>
+                  <div><img class="carousel-five" src="https://scontent-lax3-1.xx.fbcdn.net/t31.0-8/13483062_10206401550494345_6614526969037933226_o.jpg"></div>
+                  <div><img class="carousel-six" src=""></div>
+                  <div><img class="carousel-seven" src=""></div>
+                  <div><img class="carousel-eight" src=""></div>
+                  <div><img class="carousel-nine" src=""></div>
+                  <div><img class="carousel-ten" src=""></div>
+                  <div><img class="carousel-eleven" src=""></div>
+                  <div><img class="carousel-twelve" src=""></div>
+                  <div><img class="carousel-thirteen" src=""></div>
+                  <div><img class="carousel-fourteen" src=""></div>
+                  <div><img class="carousel-fifteen" src=""></div>
+                </div>
             </div>
       </div>
 
@@ -104,10 +150,95 @@
       </div>
 
       <div class="parallax_group group6">
-            <div class="slide3" id="section3">
-              <!--insert Gallery here-->
+          <div class= "group6a">
+            <h1 class="about_us" id="section3"> About Us </h1>
+            <div class= "about_him container-fluid">
+ <!--   ::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::  about him  :::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::::::::::::::::::::::::::: -->
+                  <div class="row">
+                    <div class="col-sm-6"> 
+                        <div class="carousel about_us_carousel">
+                          <div><img class="carousel-one" src="img/About Us/About Alex/age02.jpg"></div>
+                          <div><img class="carousel-two" src="img/About Us/About Alex/age03.jpg"></div>
+                          <div><img class="carousel-three" src="img/About Us/About Alex/age04.jpg"></div>
+                          <div><img class="carousel-four" src="img/About Us/About Alex/age06.jpg"></div>
+                          <div><img class="carousel-five" src="img/About Us/About Alex/age08.jpg"></div>
+                          <div><img class="carousel-six" src="img/About Us/About Alex/age08a.jpg"></div>
+                          <div><img class="carousel-seven" src="img/About Us/About Alex/age10.jpg"></div>
+                          <div><img class="carousel-eight" src="img/About Us/About Alex/age16.jpg"></div>
+                          <div><img class="carousel-nine" src="img/About Us/About Alex/age18.jpg"></div>
+                          <div><img class="carousel-ten" src="img/About Us/About Alex/age20.jpg"></div>
+                          <div><img class="carousel-eleven" src="img/About Us/About Alex/age22.jpg"></div>
+                        </div>
+                    </div>
+
+                  <div class="col-sm-6">
+                    <div class = "about_us_text">
+                        <h2> Alex Chin </h2>
+                        <br>
+                        <p>  Hometown: Short Hills, NJ </p>
+                        <p> Siblings: Amanda (younger sister) </p>
+                        <p> As a child:  &#8226 Traveled to a dozen different countries on family business trips &#8226 </p>   
+                        <p> Motto: "If you fail to plan, you plan to fail."</p>
+                        <p> Favorite sports team: Yankees</p>
+                        <p> Musical instruments:  piano, violin </p>
+                        <p> Dream career as a child:  A doctor (duh) </p>
+                        <p> Hobbies:  Remote-controlled anything, online-shopping for clothes and watches </p>
+                        <p> Pet peeve:  When Tiffany hangs the toilet paper the wrong way</p>
+                        <p> Bizarre fears:  Dust bunnies </p>                  
+                    </div>
+                  </div>
+                </div>
             </div>
+            <h1 class="bottom_left"> The Groom </h1>
+          </div>
+
+              <img id="heart" src="img/heart_arrow.png">
+<!--   ::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::  about her  :::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::::::::::::::::::::::::::: -->
+          <div class="group6b">
+            <!-- insert About Her (childhood pics) here -->
+            <h1 class="top_right"> The Bride </h1> 
+            <div class="about_her container-fluid">
+              <div class="row">
+                <div class="col-sm-6"> 
+                  <div class = "about_us_text">
+                    <h2> Tiffany Lo </h2>
+                    <br>
+                    <p> Hometown:   Rowland Heights, CA </p>
+                    <p> Siblings: &#09 Amanda (older) and Jessica (younger) </p>
+                    <p> As a child:  &#8226 Ate sand and ants &#8226 Was convinced she could fly &#8226 </p>   
+                    <p> Favorite sports team:  ...does Quidditch count? </p>
+                    <p> Musical instruments:  ukulele (that Alex bought her in medical school) </p>
+                    <p> Dream career as a child:  A librarian </p>
+                    <p> Hobbies:  Drawing, photography, hiking</p>
+                    <p> Pet peeve:  when Alex insists there's a correct way of hanging toilet paper</p>
+                    <p> Bizarre fears:  Waffles and honeycombs. Or anything with repetitive patterns. </p>  
+                  </div>
+                </div>
+                <div class="col-sm-6"> 
+                  <div class="carousel about_us_carousel">
+                        <div><img class="carousel-one" src="img/About Us/About Tiff/1990.jpg"></div>
+                        <div><img class="carousel-two" src="img/About Us/About Tiff/1991.jpg"></div>
+                        <div><img class="carousel-three" src="img/About Us/About Tiff/199104-2.jpg"></div>
+                        <div><img class="carousel-four" src="img/About Us/About Tiff/1991sep.jpg"></div>
+                        <div><img class="carousel-five" src="img/About Us/About Tiff/1994.jpg"></div>
+                        <div><img class="carousel-six" src="img/About Us/About Tiff/1998.jpg"></div>
+                        <div><img class="carousel-seven" src="img/About Us/About Tiff/2006.jpg"></div>
+                        <div><img class="carousel-eight" src="img/About Us/About Tiff/2010.jpg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
+
 
       <div class="parallax_group group7">
         <div class="parallax_layer parallax_layer--bike1"> </div>
@@ -123,8 +254,32 @@
       </div>
 
       <div class="parallax_group group8">
-            <div class="slide4" id="section4">
-              <!--insert Wedding Info + registry here-->
+            <div id="section4">
+<!--   ::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::   wedding info   ::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::::::::::::::::::::::::::: -->
+              <div class="spacer" > </div>
+              <h1 class="the-wedding"> The Wedding </h1>
+            <figure class="effect-layla">
+              <img src="http://www.burnhamvirginia.com/stay-wintergreen-1.jpg"/>
+              <figcaption>
+                <p class="col-md-6 "> 
+                  <span>WHEN</span> <br>
+                  Saturday, July 22, 2017 <br>
+                  Wedding Ceremony: 5:00pm <br>
+                  Wedding Reception: 7:00pm
+                </p>
+                <p class="col-md-6 divider"> 
+                  <span>WHERE</span> <br>
+                  Pavilion Event Center at <br>
+                  Boulder Ridge Golf Club <br>
+                  1000 Old Quarry Rd <br>
+                  San Jose, CA 95123
+                </p>
+              </figcaption>
+            </figure>
             </div>
       </div>
 
@@ -138,20 +293,29 @@
       </div>
 
       <div class="parallax_group group10">
-            <div class="slide5">
-              <!--insert RSVP here-->
+<!--   ::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::  RSVP   :::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::::::::::::::::::::::::::: -->
               <div class="spacer" > </div>
 
                <iframe id= "section5" src="https://docs.google.com/forms/d/e/1FAIpQLSexI1exApMW65q6gZdKf3y-6iQzf_9vQ03vo-Qf6Wngo_N22g/viewform?embedded=true" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">Loading...</iframe>
-            </div>
+
       </div>
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="tiff-alex-js.js"></script>
+
+
+      
+
 </container>
 </body>
 </html>

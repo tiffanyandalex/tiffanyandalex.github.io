@@ -8,10 +8,10 @@ $(document).ready(function(){
         dots: true,
         infinite: true,
         slidesToShow: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
-        variableWidth: true,
-        pauseOnHover: true,
+        variableWidth: false,
+        fade: true,
         adaptiveHeight: false
     };
 

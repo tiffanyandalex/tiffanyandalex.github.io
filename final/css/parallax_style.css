@@ -1,14 +1,20 @@
 
+/* ================================= */
+/* :::::::: Parallax Layout :::::::: */
+/* ================================= */
+
 .parallax {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #521d13;
 }
 .parallax_group {
   position: relative;
   height: 110vh;
   min-height:1000px;
+  width: 100%;
   transform-style: preserve-3d;
 }
 .parallax_layer {
@@ -22,39 +28,72 @@
   bottom: 0;
   left: 0;  
 }
-.parallax .group1{ /*mountains*/
+
+/* ================================= */
+/* ::::::::  Groups Orders ::::::::: */
+/* ================================= */
+
+.group1{ /*mountains*/
   z-index:-5;
 }
 
-.parallax .group2{ /*welcome/timeline - brown*/
+ .group2{ /*welcome/timeline - brown*/
   z-index: 0;
   height: 270vh;
+  background-color: #140b00;
 }
 
-.parallax .group3{ /*ocean*/
+.group3{ /*ocean*/
   z-index:-10;
 }
-.parallax .group4{ /*about us - dark blue*/
+.group4{ /*gallery - dark blue*/
   z-index: 0;
-  height: 220vh;
+  height: 250vh;
+  background-color: #0b0d21;
 }
-.parallax .group5{ /*stars*/
+.group5{ /*stars*/
   z-index:5;
 }
-.parallax .group6{ /*gallery - dark blue*/
+.group6{
   z-index:10;
-  height: 220vh;
+  width:100%;
+  height:240vh;
 }
-.parallax .group7{ /*bike*/
+.group6a{ /*about him - dark blue*/
+  height:50%;
+  background-color: #080d1c;
+  position:relative;
+  width:100%;
+}
+
+.group6b{ /*about her - light blue*/
+  height:50%;
+  background-image: url("../img/fog.png");
+  background-size:cover;
+  background-position:bottom;
+  position:relative;
+  width:100%;
+}
+.group7{ /*bike*/
   z-index:4;
 }
-.parallax .group8{ /*wedding info - green*/
+ .group8{ /*wedding info - green*/
   z-index:9;
   height: 220vh;
+  background-color: #021000;
 }
-.parallax .group9{ /*city*/
+.group9{ /*city*/
   z-index:0;
 }
+ .group10{ /*RSVP*/
+  z-index:5;
+  background-color: #521d13;
+  height: 200vh;
+}
+
+/* ================================= */
+/* :::::::::: 1. Mountain :::::::::: */
+/* ================================= */
 
 .parallax_layer--mountain1 {
   transform: translateZ(-2px) scale(3);
@@ -88,60 +127,13 @@
   position:fixed;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 
 
-.slide1{
-  background-color: #140b00;
-  height:270vh;
-  z-index:0;
-}
-.slide-content{
-  background-color: #140b00;
-  color:white;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 220px;
-  padding-bottom:100px;
-  font-family: "Arial";
-  line-height: 40px;
-}
 
-.slide2{
-  background-color: #0b0d21;
-  height: 200vh;
-}
+/* ================================= */
+/* :::::::::::; 2. Ocean ::::::::::: */
+/* ================================= */
 
-.slide3{
-  background-color: #080d1c;
-  background: -webkit-linear-gradient(#080d1c, #478bd8); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#080d1c, #478bd8); /* For Opera 11.1 to 12.0  */
-  background: -moz-linear-gradient(#080d1c, #478bd8); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#080d1c, #478bd8); /* Standard syntax */ 
-  /* google css gradient generators*/
-  height: 220vh;
-}
-.slide4{
-  background-color: #021000;
-  height: 220vh;
-}
-
-.slide5{
-  background-color: #521d13;
-  height: 220vh;
-}
-
-h1 {
-    font-size: 26px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-/*Ocean parallax layers*/
 
 .parallax_layer--ocean1 {
   transform: translateZ(-2.3px) scale(3.3);
@@ -201,7 +193,11 @@ h1 {
   position:fixed;
 }
 
-/* Star Parallax layers */
+
+/* ================================= */
+/* ::::::::::: 3. Stars ::::::::::: */
+/* ================================= */
+
 
 .parallax_layer--star1 {
   transform: translateZ(-1.75px) scale(2.75);
@@ -237,7 +233,10 @@ h1 {
 }
 
 
-/* Bike parallax layers */
+/* ================================= */
+/* :::::::::::: 4. Bikes ::::::::::: */
+/* ================================= */
+
 
 .parallax_layer--bike1 {
   transform: translateZ(-1.75px) scale(2.75);
@@ -324,7 +323,11 @@ h1 {
 }
 
 
-/* city parallax layers */
+
+/* ================================= */
+/* :::::::::::: 5. City :::::::::::: */
+/* ================================= */
+
 
 .parallax_layer--city1 {
   transform: translateZ(-2.5px) scale(3.5);

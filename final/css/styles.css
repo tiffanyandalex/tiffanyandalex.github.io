@@ -6,7 +6,10 @@
  * Made By MaterializeCSS.com
  */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 ul {
@@ -20,37 +23,52 @@ ul {
 
 /*---------------FONTS--------------*/
 
-@font-face {
-  font-family: "Futura_Light";
-  src: url("fonts/FuturaLight/FuturaLight.ttf") format('truetype');
-}
 /*-------------HEADERS--------------*/
-.tiff-and-alex {
-  margin-top: 0;
+
+.intro{
+  background-color: #140b00;
+  color:white;
   text-align: center;
-  padding-top: 588px;
-  color: #31cece;
-  font-size: 4em;
-  margin-bottom: 0;
+  padding-top: 250px;
+  padding-bottom:100px;
+  width: 100%;
+
 }
 
-.welcome {
-  margin-top: 0;
-  text-align: center;
-  color: white;
-  font-size: 2em;
+h1{
+    font-family: "Fredericka the Great", fantasy;
+    font-style: normal;
+    font-size: 70px;
+    font-weight:100;
+    line-height: 80px;
+    color: #fff1ab;
+    text-align: center;
+    margin:0;
 }
 
+h2{
+  font-family: 'Amatic SC', cursive;
+  line-height: 30px;
+  font-size: 36px;
+  color:white;
+}
+
+p{
+  font-family: 'Josefin Slab', serif;
+  line-height:20px;
+  font-size:18px;
+  color:white;
+}
 .our-story {
   margin-top: -322px;
   margin-left: 320px;
   padding-top: 150px;
   padding-bottom: 65px;
   text-align: center;
-  color: #33401C;
+  color: white;
   font-size: 4em;
 }
-
+/*
 .img1 {
   float: right;
   margin-right: 40px;
@@ -68,14 +86,13 @@ ul {
   width: 100%;
   border-radius: 5px;
   box-shadow: 0px 10px 6px -5px rgba(0,0,0,0.68);
-}
+}*/
 
 .explore {
   margin-top: 0;
   padding-top: 70px;
   padding-left: 20px;
-  font-family: Futura, 'Roboto', sans-serif;
-  color: #333333;
+  color: white;
   font-size: 4em;
 }
 
@@ -84,8 +101,6 @@ ul {
   padding-top: 20px;
   text-align: center;
   color: white;
-  font-family: Futura, 'Roboto', sans-serif;
-  font-size: 2em;
 }
 
 .getting-there {
@@ -93,48 +108,9 @@ ul {
   padding-top: 70px;
   text-align: center;
   color: white;
-  font-family: Futura;
   font-size: 4em;
 }
 
-/*-------------BACKGROUNDZ------------*/
-.bg1 {
-  background-image: url("../img/bg1.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
-.bg2 {
-/*  background-image: url("https://scontent-sjc2-1.xx.fbcdn.net/t31.0-8/13173404_10101179634320164_2406796197768870986_o.jpg");
-*/
-  background-color: #FAF0E6;
-  background-attachment: fixed;
-  height: 100vh;
-
-}
-
-.bg3 {
-  background-image: url("http://2.bp.blogspot.com/-2F40ivBeriw/T9MJSruKNJI/AAAAAAAAB3Q/0cUQASVnw-k/s1600/Beautiful%2BMarriageFrames%2Bkarishma%2B%2B%2Balbum%2B%2B%2Bframes%2B%2Bphotos%2B%2B%2Bbackground%2B%2B%2Bnew%2Bmarriage%2Bframes%2B5%2B(18).jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bg4 {
-  background-color: #ffb56c;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg5 {
-  background-image: url("../img/thewedding.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 /*----------------TIMELINE--------------*/
 /*.timeline {
   width: 10%;
@@ -378,44 +354,92 @@ ul {
   width: 703px;
 }
 
-/*---------------PARALLAX STUFF--------------*/
-/*
-.parallax {
-  perspective: 1px;
-  height: 98vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax_layer {
-  position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax_group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-.parallax_fore {
-  transform: translateZ(1px);
-  z-index: 5;
-}
-.parallax_base {
-  transform: translateZ(0px);
-  z-index: 4;
-}
-.parallax_back { 
-  transform: translateZ(-1px) scale(2);
-  z-index: 3;
-}
-.parallax_deep {
-  transform: translateZ(-2px) scale(3);
-  z-index: 2;
-}*/
 
+/*-------------------------------------------*/
+/*------------------ABOUT US ----------------*/
+/*-------------------------------------------*/
+
+
+#heart{
+  position:absolute;
+  height:150px;
+  width:150px;
+  left:50%; 
+  top:50%;
+  margin: -75px 0 0 -75px;
+  z-index:10;
+}
+.about_us{
+  color:#bac3cc;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.about_him{
+  height:75%;
+  width:100%;
+  bottom:0;
+  position:absolute;
+  padding-top: 100px;
+}
+.about_him h2, .about_him p{
+  color:#bac3cc;
+}
+
+.about_her{
+  height:75%;
+  width:100%;
+  padding-right:20px;
+  padding-top: 200px;
+  position:absolute;
+}
+.about_her h2, .about_her p{
+  color:#080d1c;
+}
+.about_him .about_us_text{ 
+  padding-right: 100px;
+}
+.about_her .about_us_text{
+  padding-left:100px;
+}
+.bottom_left{ /*groom*/
+  position:absolute;
+  bottom:10px;
+  left:15%;
+  font-size:60px;
+  color:#bac3cc;
+}
+.top_right{ /*bride*/
+  position:absolute;
+  top:10px;
+  right:15%;
+  color:#080d1c;
+  font-size:60px;
+}
+
+
+/*-------------------ABOUT US CAROUSELS-----------*/
+.about_us_carousel {
+  align-self: center;
+  margin: auto;
+/*  overflow: hidden;*/
+  width: 450px;
+  height: 450px;
+  display: block;
+}
+.about_us_carousel img {
+  position: relative;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 450px;
+  display: block;
+  margin: auto;
+
+}
+
+
+/*-------------------------------------------*/
 /*------------NAVIGATION---------------------*/
+/*-------------------------------------------*/
 
 .cd-nav-trigger {
   display: none;
@@ -423,7 +447,7 @@ ul {
 
 .no-touch #cd-vertical-nav {
   position: fixed;
-  right: 20px;
+  right: 0;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -474,7 +498,7 @@ ul {
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-  top: 10px;
+  top: 16px;
   height: 12px;
   width: 12px;
   border-radius: 50%;
@@ -491,10 +515,10 @@ ul {
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
-  padding: .05em .05em;
+  padding: .02em .02em;
   color: white;
   font-size: 16px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
@@ -514,10 +538,11 @@ ul {
   position: absolute;
   left: 50%;
   border-left: 1px solid white;
+  color: white;
 }
 
 span {
-  color: #333333;
+  color: white;
 }
 
 figure.effect-layla img {
@@ -623,5 +648,11 @@ figure.effect-layla:hover img {
 .spacer{
   padding-top: 120px;
   padding-bottom:100px;
-height:25vh;
+  height:10vh;
+}
+
+.curly_divider{
+  position: absolute;
+  width: 50%;
+  margin: 70px 25%;
 }

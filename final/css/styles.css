@@ -337,7 +337,7 @@ p{
   align-self: center;
   margin: 0 auto;
 /*  overflow: hidden;*/
-  width: 800px;
+  width: 850px;
   height: auto;
   display: block;
 }
@@ -379,7 +379,7 @@ p{
   width:100%;
   bottom:0;
   position:absolute;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .about_him h2, .about_him p{
   color:#bac3cc;
@@ -403,14 +403,14 @@ p{
 }
 .bottom_left{ /*groom*/
   position:absolute;
-  bottom:10px;
+  bottom:5px;
   left:15%;
   font-size:60px;
   color:#bac3cc;
 }
 .top_right{ /*bride*/
   position:absolute;
-  top:10px;
+  top:5px;
   right:15%;
   color:#080d1c;
   font-size:60px;
@@ -422,7 +422,7 @@ p{
   align-self: center;
   margin: auto;
 /*  overflow: hidden;*/
-  width: 450px;
+  width: 600px;
   height: 450px;
   display: block;
 }
@@ -436,6 +436,45 @@ p{
 
 }
 
+#nav_container {
+  overflow: visible;
+}
+
+.slider-nav-container {
+  position: absolute;
+  text-align: center;
+}
+
+.slider-nav {
+  display: inline-block;
+}
+
+.slider-nav .slick-arrow {
+  display: inline-block;
+}
+
+.slider-nav .slick-dots {
+  margin: 0 10px;
+  position: relative;
+  width: auto;
+  height: 10px;
+  display: inline-block;
+}
+
+.about_us_carousel .slick-prev {
+  position: relative; 
+  display: inline-block;
+  float: left;
+  top: 484px;
+  left: 45%;
+}
+
+.about_us_carousel .slick-next {
+  position: relative; 
+  display: inline-block;
+  top: 34px;
+  left: 55%;
+}
 
 /*-------------------------------------------*/
 /*------------NAVIGATION---------------------*/

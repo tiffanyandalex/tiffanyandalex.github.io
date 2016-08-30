@@ -4,19 +4,32 @@ $(document).ready(function(){
         currentDistanceFromTop = 0,
         targetTop = 0;
 
-    var slickOptions = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        variableWidth: false,
-        fade: true,
-        adaptiveHeight: false
-    };
-
     //Init carousel
-    $('.carousel').slick(slickOptions);
+    $(function(){
+        console.log('nothere')
+        $('.carousel').each(function(index) {
+            console.log('here')
+            console.log( index + ": " + $( this ).text() );
+            var _this = $(this);
+            var slickOptions = {
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                variableWidth: false,
+                fade: true,
+                adaptiveHeight: false,
+                arrows: true,
+            };
+             console.log('end of settings')
+            $(this).slick(slickOptions).slick('slickFilter', 'div');
+            console.log('executed')
+        })
+    });
+
+
+    // $('.carousel').slick(slickOptions);
 
     //---------------------NAVIGATION----------------------//
     updateNavigation();

@@ -6,10 +6,8 @@ $(document).ready(function(){
 
     //Init carousel
     $(function(){
-        console.log('nothere')
         $('.carousel').each(function(index) {
-            console.log('here')
-            console.log( index + ": " + $( this ).text() );
+            // console.log( index + ": " + $( this ).text() );
             var _this = $(this);
             var slickOptions = {
                 dots: true,
@@ -22,9 +20,7 @@ $(document).ready(function(){
                 adaptiveHeight: false,
                 arrows: true,
             };
-             console.log('end of settings')
             $(this).slick(slickOptions).slick('slickFilter', 'div');
-            console.log('executed')
         })
     });
 
@@ -76,9 +72,12 @@ $(document).ready(function(){
 
     var items = document.querySelectorAll(".timeline li");
 
-    window.onscroll = function() {scrollFunction()};
+    $('.parallax').onscroll = function() {scrollFunction()};
+    console.log('here')
     function scrollFunction() {
+        console.log('inside scrollfunction')
         for (var i = 0; i < items.length; i++) {
+            console.log(isScrolledIntoView(items[i]))
             if(isScrolledIntoView(items[i])){
                  items[i].classList.add("in-view");
             }
@@ -86,6 +85,7 @@ $(document).ready(function(){
     }
 
     function isScrolledIntoView(el) {
+
         var elemTop = el.getBoundingClientRect().top;
         var elemBottom = el.getBoundingClientRect().bottom;
 

@@ -6,10 +6,7 @@
  * Made By MaterializeCSS.com
  */
 body {
-  font-family: 'Amatic SC', cursive;
-  margin: 0;
-  padding: 0;
-  border: 0;
+  font-family: 'Josefin Slab';
 }
 
 ul {
@@ -18,7 +15,7 @@ ul {
 }
 
 .container-fluid {
-  padding: 0;
+
 }
 
 /*---------------FONTS--------------*/
@@ -36,28 +33,41 @@ ul {
 }
 
 h1{
-    font-family: "Fredericka the Great", fantasy;
-    font-style: normal;
-    font-size: 70px;
-    font-weight:100;
-    line-height: 80px;
+  font-family: 'Roboto Slab';
+  font-size: 5.000em;
+  font-weight: 100;
+  font-style: normal;
     color: #fff1ab;
     text-align: center;
     margin:0;
 }
 
 h2{
-  font-family: 'Amatic SC', cursive;
-  line-height: 30px;
-  font-size: 36px;
+  font-family: 'Amatic SC';
+  line-height: 0.9;
+  font-size: 2.813em;
+  font-weight: normal;
+  font-style: normal;
   color:white;
+  text-align: center;
+}
+
+h3{
+  font-family: 'Amatic SC';
+  font-size: 5.5em;
+  font-weight: normal;
+  font-style: normal;
+  color:gray;
+  text-align: center;
+  margin:0;
 }
 
 p{
-  font-family: 'Josefin Slab', serif;
-  line-height:20px;
-  font-size:18px;
-  color:white;
+  font-family: 'Josefin Slab';
+  font-size: 1.125em;
+  font-weight: 300;
+  font-style: normal;
+  color:gray;
 }
 .our-story {
   margin-top: -322px;
@@ -91,9 +101,8 @@ p{
 .explore {
   margin-top: 0;
   padding-top: 70px;
-  padding-left: 20px;
   color: white;
-  font-size: 4em;
+  font-size: 5em;
 }
 
 .the-wedding {
@@ -103,6 +112,14 @@ p{
   color: white;
 }
 
+.wedding-img {
+  margin: 0 auto;
+  display: block;
+}
+
+.when-info {
+  text-align: right;
+}
 .getting-there {
   margin-top: 0;
   padding-top: 70px;
@@ -117,6 +134,9 @@ p{
   margin: 0 auto;
   z-index: 1000;
 }*/
+.timeline-1 {
+  margin-top: 562px;
+}
 
 .timeline ul li {
   list-style-type: none;
@@ -331,7 +351,8 @@ p{
   }
 }
 
-/*----------------DA_CAROUSEL-----------*/
+/*----------------GALLERY-----------*/
+
 
 #carousel {
   align-self: center;
@@ -353,6 +374,7 @@ p{
 .slick-slide {
   width: 703px;
 }
+
 
 
 /*-------------------------------------------*/
@@ -475,6 +497,7 @@ p{
   top: 34px;
   left: 55%;
 }
+
 
 /*-------------------------------------------*/
 /*------------NAVIGATION---------------------*/

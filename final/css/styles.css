@@ -39,7 +39,7 @@ h1{
   font-style: normal;
     color: #fff1ab;
     text-align: center;
-    margin:0;
+    margin-bottom:10px;
 }
 
 h2{
@@ -78,25 +78,7 @@ p{
   color: white;
   font-size: 4em;
 }
-/*
-.img1 {
-  float: right;
-  margin-right: 40px;
-  margin-top: 10px;
-  max-width: 300px;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 0px 10px 6px -5px rgba(0,0,0,0.68);
-}
 
-.img2 {
-  margin-left: 40px;
-  max-width: 300px;
-  padding-top: 13px;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 0px 10px 6px -5px rgba(0,0,0,0.68);
-}*/
 
 .explore {
   margin-top: 0;
@@ -126,6 +108,9 @@ p{
   text-align: center;
   color: white;
   font-size: 4em;
+}
+.acknowledgements{
+  text-align: center;
 }
 
 /*----------------TIMELINE--------------*/
@@ -579,6 +564,7 @@ p{
   margin-right: 10px;
   padding: .02em .02em;
   color: white;
+  font-family: 'Amatic SC';
   font-size: 16px;
   font-size: 2.5rem;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
@@ -600,11 +586,12 @@ p{
   position: absolute;
   left: 50%;
   border-left: 1px solid white;
-  color: white;
 }
 
 span {
-  color: white;
+  color:white;
+  font-family: 'Amatic SC';
+  font-size: 2em;
 }
 
 figure.effect-layla img {
@@ -706,6 +693,10 @@ figure.effect-layla:hover img {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
+
+/*----------------------------*/
+/***** Spacers and extras *****/
+/*----------------------------*/
 
 .spacer{
   padding-top: 120px;

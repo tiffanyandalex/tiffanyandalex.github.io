@@ -18,7 +18,6 @@ ul {
 
 }
 
-/*---------------FONTS--------------*/
 
 /*-------------HEADERS--------------*/
 
@@ -57,7 +56,7 @@ h3{
   font-size: 5.5em;
   font-weight: normal;
   font-style: normal;
-  color:gray;
+  color:white;
   text-align: center;
   margin:0;
 }
@@ -69,14 +68,9 @@ p{
   font-style: normal;
   color:gray;
 }
-.our-story {
-  margin-top: -322px;
-  margin-left: 320px;
-  padding-top: 150px;
-  padding-bottom: 65px;
+.our_story {
   text-align: center;
-  color: white;
-  font-size: 4em;
+
 }
 
 
@@ -97,6 +91,8 @@ p{
 .wedding-img {
   margin: 0 auto;
   display: block;
+  width: 400px
+  height: auto;
 }
 
 .when-info {
@@ -343,7 +339,7 @@ p{
   align-self: center;
   margin: 0 auto;
 /*  overflow: hidden;*/
-  width: 850px;
+  width: 70%;
   height: auto;
   display: block;
 }
@@ -374,7 +370,7 @@ p{
   left:50%; 
   top:50%;
   margin: -75px 0 0 -75px;
-  z-index:10;
+  z-index:50;
 }
 .about_us{
   color:#bac3cc;
@@ -591,12 +587,12 @@ p{
 span {
   color:white;
   font-family: 'Amatic SC';
-  font-size: 2em;
 }
 
 figure.effect-layla img {
   height: -webkit-calc(100% + 40px);
   height: calc(100% + 40px);
+  opacity: 0.7;
 }
 
 figure.effect-layla figcaption {
@@ -667,7 +663,7 @@ figure.effect-layla p {
 }
 
 figure.effect-layla:hover img {
-  opacity: 0.7;
+  opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }

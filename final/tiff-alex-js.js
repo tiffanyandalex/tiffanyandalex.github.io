@@ -31,6 +31,7 @@ $(document).ready(function(){
     updateNavigation();
     $('.parallax').on('scroll', function(){
        updateNavigation();
+       scrollFunction();
 
     });
     //smooth scroll to the section
@@ -70,15 +71,13 @@ $(document).ready(function(){
 
     //--------------TIMELINE----------------//
 
-    var items = document.querySelectorAll(".timeline li");
+    var items = document.querySelectorAll(".carousel-alex, .carousel-tiff, #carousel");
 
-    $('.parallax').onscroll = function() {scrollFunction()};
-    console.log('here')
+    //window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
-        console.log('inside scrollfunction')
         for (var i = 0; i < items.length; i++) {
-            console.log(isScrolledIntoView(items[i]))
             if(isScrolledIntoView(items[i])){
+                console.log(isScrolledIntoView(items[i]))
                  items[i].classList.add("in-view");
             }
         }

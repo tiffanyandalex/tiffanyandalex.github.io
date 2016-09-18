@@ -14,7 +14,7 @@
   position: relative;
   height: 110vh;
   min-height:1000px;
-  width: 100%;
+  width: 101%;
   transform-style: preserve-3d;
   margin: -1px
 }
@@ -42,6 +42,7 @@
   z-index: 0;
   height: 270vh;
   background-color: #140b00;
+    will-change:top;
 }
 
 .group3{ /*ocean*/
@@ -51,6 +52,7 @@
   z-index: 0;
   height: 300vh;
   background-color: #0b0d21;
+    will-change:top;
 }
 .group5{ /*stars*/
   z-index:1;

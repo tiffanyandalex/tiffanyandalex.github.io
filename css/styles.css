@@ -116,7 +116,7 @@ p{
   text-align: center;
   color:gray;
 }
-
+/*--------TIMELINE CAROUSEL------------*/
 
 /*--------INTRODUCTION------------*/
 
@@ -208,8 +208,6 @@ p{
   color: #ffe890;
   transition: all 0.5s ease-in-out;
 }
-
-
 
 
 /*--------------RESPONSIVE TIMELINE------------*/

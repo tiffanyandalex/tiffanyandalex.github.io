@@ -13,7 +13,7 @@ $(document).ready(function(){
                 dots: true,
                 infinite: true,
                 slidesToShow: 1,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 2000,
                 variableWidth: false,
                 fade: true,
@@ -71,13 +71,11 @@ $(document).ready(function(){
 
     //--------------TIMELINE----------------//
 
-    var items = document.querySelectorAll(".carousel-alex, .carousel-tiff, #carousel");
+    var items = document.querySelectorAll(".carousel, .intro, .t-date, p, .about-us-text");
 
-    //window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
         for (var i = 0; i < items.length; i++) {
             if(isScrolledIntoView(items[i])){
-                console.log(isScrolledIntoView(items[i]))
                  items[i].classList.add("in-view");
             }
         }

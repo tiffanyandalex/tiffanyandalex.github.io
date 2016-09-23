@@ -41,7 +41,7 @@
  .group2{ /*welcome/timeline - brown*/
   z-index: 0;
   height: 270vh;
-  background-color: #140b00;
+  background: #140b00;
     will-change:top;
 }
 
@@ -51,7 +51,7 @@
 .group4{ /*gallery - dark blue*/
   z-index: 0;
   height: 300vh;
-  background-color: #0b0d21;
+  background: #0b0d21;
     will-change:top;
 }
 .group5{ /*stars*/
@@ -65,7 +65,7 @@
 }
 .group6a{ /*about him - dark blue*/
   height:50%;
-  background-color: #080d1c;
+  background: #080d1c;
   position:relative;
   width:100%;
 }
@@ -103,7 +103,7 @@
 
 .parallax_layer--mountain1 {
   transform: translateZ(-2px) scale(3);
-  background-image: url("../img/mountain/layer_1.png");
+  background-image: url("../img/mountain/layer_1.jpg");
   z-index:-10;
   position:fixed;
   background-size: cover;
@@ -143,7 +143,7 @@
 
 .parallax_layer--ocean1 {
   transform: translateZ(-2.3px) scale(3.3);
-  background-image: url("../img/ocean/layer_1.png");
+  background-image: url("../img/ocean/layer_1.jpg");
   z-index:-5;
   position:fixed;
   background-size: cover;
@@ -246,84 +246,55 @@
 
 .parallax_layer--bike1 {
   transform: translateZ(-1.75px) scale(2.75);
-  background-image: url("../img/bike/layer_1.png");
+  background-image: url("../img/bike/artflow_201609212124.jpg");
   z-index:-10;
   position:fixed;
   background-size: cover;
   width:102%;
 }
-.parallax_layer--bike1b {
-  transform: translateZ(-1.5px) scale(2.5);
-  background-image: url("../img/bike/layer_1b.png");
-  z-index:-9;
-  position:fixed;
-  background-size: cover;
-  width:102%;
-}
 .parallax_layer--bike2 {
-  background-image: url("../img/bike/layer_2.png");
-  transform: translateZ(-1.3px) scale(2.3);
-  z-index:-8;
+  background-image: url("../img/bike/artflow_201609212220.png"); /*mountain*/
+  transform: translateZ(-1.5px) scale(2.5);
+  z-index:-9;
   position:fixed;
 }
 .parallax_layer--bike2b {
-  transform: translateZ(-1px) scale(2);
-  background-image: url("../img/bike/layer_2b.png");
-  z-index:-7;
+  transform: translateZ(-1.2px) scale(2.2);
+  background-image: url("../img/bike/artflow_201609220948.png"); /*fog and birds*/
+  z-index:-8;
   position:fixed;
   background-size: cover;
   width:102%;
 }
 .parallax_layer--bike3 {
-  background-image: url("../img/bike/layer_3.png");
-  transform: translateZ(-0.8px) scale(1.8);
-  z-index:-6;
+  background-image: url("../img/bike/artflow_201609221310.png"); /*water*/
+  transform: translateZ(-1px) scale(2);
+  z-index:-7;
   position:fixed;
 }
 .parallax_layer--bike4 {
-  background-image: url("../img/bike/layer_4.png");
-  z-index:-5;
-  transform: translateZ(-.7px) scale(1.7);
+  background-image: url("../img/bike/artflow_201609221141.png"); /*bridge*/
+  z-index:-6;
+  transform: translateZ(-.8px) scale(1.8);
   position:fixed;
 }
-.parallax_layer--bike5a {
-  background-image: url("../img/bike/layer_5a.png");
+
+.parallax_layer--bike5 {
+  background-image: url("../img/bike/artflow_201609221157.png"); /*grass-back*/
   z-index:-4;
   transform: translateZ(-.5px) scale(1.5);
   position:fixed;
 }
-.parallax_layer--bike5b {
-  background-image: url("../img/bike/layer_5b.png");
+.parallax_layer--bike6 {
+  background-image: url("../img/bike/artflow_201609221258.png");
   z-index:-3;
   transform: translateZ(-.25px) scale(1.25);
   position:fixed;
 }
 
-.parallax_layer--bike6 {
-  background-image: url("../img/bike/layer_6.png");
-  z-index:-2;
-  position:fixed;
-  transform: translateZ(-.25px) scale(1.25);
-/*  
-  transition: transform 5s ease-in-out;
-  -webkit-transition: 5s ease-in-out;
-    -moz-transition: 5s ease-in-out;
-    -o-transition: 5s ease-in-out;
-    transition: 5s ease-in-out;
-*/
-  
-}
-
- .parallax_layer--bike6.bikes:hover {
-   /* -webkit-transform: translate3d(-400px, 380px, 0px) rotate(-7deg) scale(.5);
-    -moz-transform: translate3d(-800px, -50px, -.25px) scale(.25);
-    -o-transform: translate3d(-300px, -50px, -.25px) scale(.25);
-    -ms-transform: translate3d(-300px, -50px, -.25px) scale(.25);
-    transform: translate3d(-400px, 380px, 0px) rotate(-7deg) scale(.5);*/
-  }
 
 .parallax_layer--bike7 {
-  background-image: url("../img/bike/layer_7.png");
+  background-image: url("../img/bike/artflow_201609212217.png");
   z-index:0;
   position:fixed;
 }
@@ -337,7 +308,7 @@
 
 .parallax_layer--city1 {
   transform: translateZ(-2.5px) scale(3.5);
-  background-image: url("../img/city/layer_1.png");
+  background-image: url("../img/city/layer_1.jpg");
   z-index:1;
   position:fixed;
   background-size: cover;

@@ -17,7 +17,6 @@ ul {
 /*-------------HEADERS--------------*/
 
 .intro{
-  background-color: #140b00;
   color:white;
   text-align: center;
   padding-top: 90px;
@@ -124,6 +123,13 @@ p{
   animation-name: fadeInUp;
   animation-duration: 1s;
   visibility: visible;
+}
+
+.group2-container{
+  height:100%;
+  width:100%;
+  background: url(https://www.transparenttextures.com/patterns/dark-tire.png) repeat;
+  padding: 10px;
 }
 
 /*--------TIMELINE CAROUSEL------------*/
@@ -309,6 +315,7 @@ p{
   bottom:0;
   position:absolute;
   padding-top: 50px;
+  background:url(https://www.transparenttextures.com/patterns/checkered-pattern.png) repeat;
 }
 .about-him h2, .about-him p{
   color:#bac3cc;
@@ -320,6 +327,8 @@ p{
   padding-right:20px;
   padding-top: 200px;
   position:absolute;
+
+  background:url(https://www.transparenttextures.com/patterns/white-linen.png) repeat;
 }
 .about-her h2, .about-her p{
   color:#080d1c;
@@ -615,6 +624,11 @@ figure.effect-layla h2 {
   transform: translate3d(0,-30px,0);
 }
 
+figure.effect-layla img{
+    border: 9px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
 figure.effect-layla img,
 figure.effect-layla figcaption::before,
 figure.effect-layla figcaption::after,
@@ -659,8 +673,9 @@ figure.effect-layla:hover img {
   height:10vh;
 }
 
-.curly_divider{
-  position: absolute;
-  width: 50%;
-  margin: 70px 25%;
+.curly_divider img{
+  width: auto;
+  margin: 0 auto;
+  display:block;
+  /*margin: 70px 25%;*/
 }

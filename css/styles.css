@@ -135,159 +135,91 @@ p{
 
 /*----------------TIMELINE--------------*/
 
-.timeline-text p{
-  position: absolute;
-  top: 10px;
+.timeline .row{
+  height:200px;
+}
+.timeline .col-md-4, .col-md-2, .col-md-6{
+  height:100%;
+}
+.timeline .t-text{
+  border-left:5px solid white;
 }
 
-.timeline-p {
-  position: absolute;
-  top: 10px;
-}
-
-.timeline ul li {
-  list-style-type: none;
-  position: relative;
-  width: 3px;
-  margin: 0 auto;
-  padding-top: 43px;
-  background: #fff;
-  opacity:1;
-}
-
-.t-date.in-view {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  visibility:visible;
-}
-
-.timeline_text p {
-  padding-left: 100px;
-  margin-left: -100px;
-}
-
-.timeline_text p.in-view {
-   animation-name: fadeIn;
-  animation-duration: 1s;
-  visibility:visible;
-}
-
-.timeline ul li::after {
+.timeline .t-text::before{
   content: '';
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
+  left: -15px;
+  top:60px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background: #fff;
   opacity:1;
 }
-
-.timeline ul li div {
-  position: relative;
-  left: -150px;
-  bottom: 0;
-  width: 35vw;
-  margin-left: 1px;
-  padding: 15px;
-  transform: translate(200px,20px);
-}
-.timeline_text p{
-  color: #4e4e4e;
-  font-size: 18px;
+.t-text p{
+  padding-top:60px;
+  padding-left:30px;
+  font-size:18px;
+  color:gray;
   transform: scale(0.9, 0.9);
   visibility:hidden;
+  transition: all 0.5s ease-in-out;
 }
 
+.t-text p.in-view{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  visibility:visible;
+}
+
+.t-date h4{
+  font-size: 2.5em;
+  color:gray;
+  margin:0;
+}
 .t-date {
-  float: left;
-  display: inline-block;
-  vertical-align:bottom;
+  transform: scale(0.9,0.9);
+  padding-top:60px;
   visibility:hidden;
-  font-family: 'Amatic SC';
+  transition: all 0.5s ease-in-out;
 }
 
-.timeline ul li div div.t-date {
-  position: absolute;
-  left: -350px;
-  font-size: 34px;
-  color: #4e4e4e;
-  transform: scale(0.9, 0.9);
-
+.t-date.in-view{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  visibility:visible;
 }
 
-.timeline ul li:hover p{
+.t-pic img{
+  position:relative;
+  height:150%;
+  margin-left:-80px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+  border: 8px solid white;
+  transform: scale(0.9,0.9);
+}
+
+.timeline .row:hover p{
   transform: scale(1, 1);
   color:white;
   transition: all 0.5s ease-in-out;
 }
 
-.timeline ul li img{
-  opacity: 0;
-  transition: opacity 1s ease-in-out; 
-}
-
-.timeline-img-1 {
-  position: absolute;
-  left: -600px;
-  top: -137px;
-  width: 50%;
-  border-radius: 15px;
-}
-
-.timeline ul li:hover img{
-  opacity: 1.0;
-  transition: opacity 1s ease-in-out; 
-}
-
- .timeline ul li:hover .t-date{
+.timeline .row:hover .t-date{
   transform: scale(1,1);
-  color: #ffe890;
   transition: all 0.5s ease-in-out;
 }
+.timeline .row:hover h4{
+  transition: all 0.5s ease-in-out;
+  color:#ffe890;
+}
 
-
-/*--------------RESPONSIVE TIMELINE------------*/
-/*@media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-  }
-  .timeline ul li:nth-child(even) div {
-    left: -289px; 
-  }
-}*/
-
-@media screen and (max-width: 2300px) {
-  .timeline-1, .timeline-2 {
-    position: absolute;
-    left: 45.8%;
-  }
-
-  .timeline-2 {
-    margin-top: -144px;
-  }
-
-  .timeline-content {
-    color: white;
-    font-size: 1.4em;
-  }
- /* #date-1, #date-2, #date-3, #date-5 {
-    top: 35px;
-  }*/
-  
-  .timeline ul li div span.t-date {
-    top: 35px;
-  }
-
-  .timeline ul li {
-    margin-left: 1px;
-  }
-
-  .timeline ul li div {
-    width: 35vw;
-  }
+.timeline .row:hover img{
+  opacity:1;
+  transform: scale(1,1);
+  transition: all 0.5s ease-in-out; 
+}
 
 /*----------------GALLERY-----------*/
 

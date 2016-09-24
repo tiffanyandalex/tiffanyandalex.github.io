@@ -28,7 +28,6 @@
   :::::::::::::::::  NAVIGATOR  :::::::::::::::::
   :::::::::::::::::::::::::::::::::::::::::::::::
   ::::::::::::::::::::::::::::::::::::::::::::::: -->
-   <container>
     <nav id="cd-vertical-nav">
       <ul>
         <li>
@@ -99,42 +98,45 @@
           <div class="spacer"> </div>
           <h4> (Hover over time points!) </h4>
           <div class="spacer"> </div>
-          <div class="timeline">
+          <div class="timeline container">
 
               <ul class="timeline-1">
-                <li id="animate1" class="animate1">
+                <li id="animate1" class="animate1 row">
                   <div class="timeline_text">
-                    <span id="date-1" class="t-date two-lines">Sept 2006</span>
-                    <p> Boy meets girl on her first day of college. (Girl doesn't remember this event.)</p>
+                    <div id="date-1" class="t-date two-lines">Sept 2006</div>
+                    <p class="timeline-p"> Boy meets girl on her first day of college. (Girl doesn't remember this event.)
+                      <div><img class="timeline-img-1" src="https://scontent.xx.fbcdn.net/v/t1.0-9/12705585_10101098638785864_2272683847029361724_n.jpg?oh=beca08a3e1fa6022b624029b0d4867d2&oe=58194CA5"/>
+                      </div>
+                    </p>
                   </div>
                 </li>
                 <li id="animate2" class="animate2">
                   <div class="timeline_text">
-                    <span id='date-2' class='t-date two-lines'>Jan 2007</span>
-                    <p> Boy and girl meet again when they volunteer at a local hospice every week. (Girl remembers this.) </p>
+                    <div id='date-2' class='t-date two-lines'>Jan 2007</div>
+                    <p> Boy and girl meet again when they volunteer at a local hospice every week. (Girl remembers this.) <div><img src="" /></div></p>
                   </div>
                 </li>
                 <li id="animate3" class="animate3">
                   <div class="timeline_text">
-                    <span id='date-3' class='t-date'>Oct 2007</span>
+                    <div id='date-3' class='t-date'>Oct 2007</div>
                     <p> Boy asks girl out. Girl does not realize this is a date and brings her friend. </p>
                   </div>
                 </li>
                 <li id="animate4" class="animate4">
                   <div class="timeline_text">
-                    <span id='date-4' class='t-date'>Nov 2007</span>
+                    <div id='date-4' class='t-date'>Nov 2007</div>
                     <p> Boy asks girl out again, this time as explicitly as possible. They have their first official date over sushi. </p>
                   </div>
                 </li>
                 <li id="animate5" class="animate5">
                   <div class="timeline_text">
-                    <span id='date-5' class='t-date'>Dec 2007</span>
+                    <div id='date-5' class='t-date'>Dec 2007</div>
                     <p> Several dates later, boy surprises girl with an ice cream study break. Girl is pleased. Relationship continues. </p>
                   </div>
                 </li>
                 <li id="animate6" class="animate6">
                   <div class="timeline_text">
-                    <span class='t-date'>Sept 2008</span>
+                    <div class='t-date'>Sept 2008</div>
                     <p> Boy and girl take a ballroom dance class. They discover they are terrible. (Not an important timepoint. Just want to lower expectations for the wedding dance.) </p>
                   </div>
                 </li>
@@ -145,7 +147,7 @@
     </div>
 <!--   ::::::::::::::::::::::::::::::::::::::::::
   :::::::::::::::::::::::::::::::::::::::::::::::
-  ::::::::::::::::  timeilne  :::::::::::::::::::
+  ::::::::::::::::  timeline  :::::::::::::::::::
   :::::::::::::::::::::::::::::::::::::::::::::::
   ::::::::::::::::::::::::::::::::::::::::::::::: -->
 
@@ -406,8 +408,5 @@
     <script type="text/javascript" src="tiff-alex-js.js"></script>
 
 
-      
-
-</container>
 </body>
 </html>

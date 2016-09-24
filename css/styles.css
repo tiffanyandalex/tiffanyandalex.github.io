@@ -135,6 +135,15 @@ p{
 
 /*----------------TIMELINE--------------*/
 
+.timeline-text p{
+  position: absolute;
+  top: 10px;
+}
+
+.timeline-p {
+  position: absolute;
+  top: 10px;
+}
 
 .timeline ul li {
   list-style-type: none;
@@ -151,8 +160,13 @@ p{
   animation-duration: 1s;
   visibility:visible;
 }
-.timeline_text p.in-view
-{
+
+.timeline_text p {
+  padding-left: 100px;
+  margin-left: -100px;
+}
+
+.timeline_text p.in-view {
    animation-name: fadeIn;
   animation-duration: 1s;
   visibility:visible;
@@ -192,11 +206,12 @@ p{
   display: inline-block;
   vertical-align:bottom;
   visibility:hidden;
+  font-family: 'Amatic SC';
 }
 
-.timeline ul li div span.t-date {
+.timeline ul li div div.t-date {
   position: absolute;
-  left: -170px;
+  left: -350px;
   font-size: 34px;
   color: #4e4e4e;
   transform: scale(0.9, 0.9);
@@ -208,6 +223,25 @@ p{
   color:white;
   transition: all 0.5s ease-in-out;
 }
+
+.timeline ul li img{
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+}
+
+.timeline-img-1 {
+  position: absolute;
+  left: -600px;
+  top: -137px;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.timeline ul li:hover img{
+  opacity: 1.0;
+  transition: opacity 1s ease-in-out; 
+}
+
  .timeline ul li:hover .t-date{
   transform: scale(1,1);
   color: #ffe890;
@@ -239,9 +273,9 @@ p{
     color: white;
     font-size: 1.4em;
   }
-  #date-1, #date-2, #date-3, #date-5 {
+ /* #date-1, #date-2, #date-3, #date-5 {
     top: 35px;
-  }
+  }*/
   
   .timeline ul li div span.t-date {
     top: 35px;
@@ -548,7 +582,7 @@ p{
 }
 
 span {
-  color:white;
+  color: white;
   font-family: 'Amatic SC';
 }
 

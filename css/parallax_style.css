@@ -40,7 +40,7 @@
 
  .group2{ /*welcome/timeline - brown*/
   z-index: 0;
-  height: 370vh;
+  height: 500vh;
   background: #140b00;
     will-change:top;
 }

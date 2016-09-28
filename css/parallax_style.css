@@ -1,17 +1,39 @@
 /* ================================= */
 /* :::::::: Responsive Design :::::::: */
 /* ================================= */
+/* Because these styles appear before most of the styles being overriden in the code, 
+   we need to append an ancestor's class to overriding styles, i.e. the media query .group2{} styles will not 
+   override the other .group2{}, so we append .parallax .group2{} to override due to specificity */
 
-/* MOBILE */
+/* Mobile */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 
 }
-
+/* Tablet Portrait */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   .group1 .parallax_layer--mountain5 {
     width: 150%;
     left: -78px;
+  }
+
+  .row .t-pic img{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .parallax .group2{
+    height: 350vh;
+  }
+
+  .group3 .parallax_layer--ocean3a {
+    transform: translateZ(-1.6px) scale(2.4);
+    width: 211%;
+  }
+
+  .group3 .parallax_layer--ocean3b {
+    transform: translateZ(-1.3px) scale(2.0);
+    width: 115%;
   }
 }
 

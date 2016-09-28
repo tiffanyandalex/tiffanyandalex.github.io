@@ -136,6 +136,10 @@ p{
   transform: rotate(90deg);
 }
 
+#timeline-img-11{
+  height: 150%;
+}
+
 /*----------------TIMELINE--------------*/
 
 .timeline .row{
@@ -195,7 +199,7 @@ p{
 
 .t-pic img{
   position: relative;
-  height: 150%;
+  height: auto;
   margin-left: -70px;
   margin-top: -50px;
   opacity:0;

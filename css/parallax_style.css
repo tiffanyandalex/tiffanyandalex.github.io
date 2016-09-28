@@ -1,4 +1,37 @@
+/* ================================= */
+/* :::::::: Responsive Design :::::::: */
+/* ================================= */
 
+/* MOBILE */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .group1 .parallax_layer--mountain5 {
+    width: 150%;
+    left: -78px;
+  }
+}
+
+@media screen and (max-height: 640px){
+  .group2{
+    height: 515vh;
+  }
+}
+
+@media screen and (max-height: 620px){
+  .group2{
+    height: 530vh;
+  }
+}
+
+@media screen and (max-height: 610px){
+  .group2{
+    height: 545vh;
+  }
+}
 /* ================================= */
 /* :::::::: Parallax Layout :::::::: */
 /* ================================= */
@@ -42,8 +75,10 @@
   z-index: 0;
   height: 500vh;
   background: #140b00;
-    will-change:top;
+  will-change:top;
+
 }
+
 
 .group3{ /*ocean*/
   z-index:-10;

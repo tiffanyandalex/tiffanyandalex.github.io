@@ -114,7 +114,6 @@ p{
   text-align: center;
   color:gray;
 }
-/*--------TIMELINE CAROUSEL------------*/
 
 /*--------INTRODUCTION------------*/
 
@@ -125,24 +124,28 @@ p{
 }
 
 .group2-container{
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   background: url(https://www.transparenttextures.com/patterns/dark-tire.png) repeat;
   padding: 10px;
 }
 
-/*--------TIMELINE CAROUSEL------------*/
+/*--------TIMELINE PICTURES------------*/
+
+#timeline-img-4{
+  transform: rotate(90deg);
+}
 
 /*----------------TIMELINE--------------*/
 
 .timeline .row{
-  height:200px;
+  height: 200px;
 }
-.timeline .col-md-4, .col-md-2, .col-md-6{
-  height:100%;
+.timeline .col-md-4, .col-md-2, .col-md-6, .col-md-3{
+  height: 100%;
 }
 .timeline .t-text{
-  border-left:5px solid white;
+  border-left: 5px solid white;
 }
 
 .timeline .t-text::before{
@@ -157,53 +160,54 @@ p{
   opacity:1;
 }
 .t-text p{
-  padding-top:60px;
-  padding-left:30px;
-  font-size:18px;
+  padding-top: 60px;
+  padding-left: 30px;
+  font-size: 18px;
   color:gray;
   transform: scale(0.9, 0.9);
-  visibility:hidden;
+  visibility: hidden;
   transition: all 0.5s ease-in-out;
 }
 
 .t-text p.in-view{
   animation-name: fadeIn;
   animation-duration: 1s;
-  visibility:visible;
+  visibility: visible;
 }
 
 .t-date h4{
   font-size: 2.5em;
-  color:gray;
-  margin:0;
+  color: gray;
+  margin: 0;
 }
 .t-date {
   transform: scale(0.9,0.9);
-  padding-top:60px;
-  visibility:hidden;
+  padding-top: 60px;
+  visibility: hidden;
   transition: all 0.5s ease-in-out;
 }
 
 .t-date.in-view{
   animation-name: fadeIn;
   animation-duration: 1s;
-  visibility:visible;
+  visibility: visible;
 }
 
 .t-pic img{
-  position:relative;
-  height:150%;
-  margin-left:-80px;
+  position: relative;
+  height: 150%;
+  margin-left: -70px;
   margin-top: -50px;
   opacity:0;
   transition: all 0.5s ease-in-out;
   border: 8px solid white;
   transform: scale(0.9,0.9);
+  max-width: 100%;
 }
 
 .timeline .row:hover p{
   transform: scale(1, 1);
-  color:white;
+  color: white;
   transition: all 0.5s ease-in-out;
 }
 
@@ -213,11 +217,11 @@ p{
 }
 .timeline .row:hover h4{
   transition: all 0.5s ease-in-out;
-  color:#ffe890;
+  color: #ffe890;
 }
 
 .timeline .row:hover img{
-  opacity:1;
+  opacity: 1;
   transform: scale(1,1);
   transition: all 0.5s ease-in-out; 
 }
@@ -504,6 +508,21 @@ p{
   transform-origin: 100% 50%;
 }
 
+.touch #cd-vertical-nav {
+  position: fixed;
+  z-index: 1;
+  right: 5%;
+  bottom: 30px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+.touch #cd-vertical-nav.open {
+  transform: scale(1);
+}
 /*---------------*/
 /***** Layla *****/
 /*---------------*/

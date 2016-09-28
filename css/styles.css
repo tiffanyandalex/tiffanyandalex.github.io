@@ -17,7 +17,7 @@ ul {
   text-align: center;
   padding-top: 90px;
   width: 100%;
-  visibility:hidden;
+  visibility: hidden;
 }
 
 h1{
@@ -27,7 +27,7 @@ h1{
   font-style: normal;
   color: #ffe890;
   text-align: center;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 h2{
@@ -45,20 +45,20 @@ h3{
   font-size: 5.5em;
   font-weight: normal;
   font-style: normal;
-  color:white;
+  color: white;
   text-align: center;
-  padding-top:50px;
-  padding-bottom:50px;
-  margin:0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0;
 }
 
 h4{
   font-family: 'Amatic SC';
   font-size: 2.5em;
   font-weight: normal;
-  color:#ffe890;
+  color: #ffe890;
   text-align: center;
-  margin-top:20px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -104,15 +104,15 @@ p{
 }
 
 .wedding-info .row{
-  width:90%;
-  display:block;
+  width: 90%;
+  display: block;
   margin:0 auto;
 
 }
 
 .acknowledgements p{
   text-align: center;
-  color:gray;
+  color: gray;
 }
 
 /*--------INTRODUCTION------------*/
@@ -156,12 +156,12 @@ p{
   content: '';
   position: absolute;
   left: -15px;
-  top:60px;
+  top: 60px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background: #fff;
-  opacity:1;
+  opacity: 1;
 }
 .t-text p{
   padding-top: 60px;
@@ -234,7 +234,7 @@ p{
 
 
 .carousel-gallery {
-  top:50px;
+  top: 50px;
   align-self: center;
   margin: 0 auto;
   width: calc(60%);
@@ -254,7 +254,7 @@ p{
   margin: auto;
   vertical-align: middle;
   max-width: 100%;
-  max-height:600px;
+  max-height: 600px;
   display: block;
 }
 
@@ -271,41 +271,41 @@ p{
 
 #heart{
   position:absolute;
-  height:100px;
-  width:100px;
-  left:50%; 
-  top:50%;
+  height: 100px;
+  width: 100px;
+  left: 50%; 
+  top: 50%;
   margin: -50px 0 0 -50px;
-  z-index:50;
+  z-index: 50;
 }
 .about-us{
-  color:#bac3cc;
+  color: #bac3cc;
   padding-top: 100px;
   padding-bottom: 200px;
 }
 .about-him{
-  height:75%;
-  width:100%;
-  bottom:0;
-  position:absolute;
+  height: 75%;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
   padding-top: 50px;
-  background:url(https://www.transparenttextures.com/patterns/checkered-pattern.png) repeat;
+  background: url(https://www.transparenttextures.com/patterns/checkered-pattern.png) repeat;
 }
 .about-him h2, .about-him p{
-  color:#bac3cc;
+  color: #bac3cc;
 }
 
 .about-her{
-  height:75%;
-  width:100%;
-  padding-right:20px;
+  height: 75%;
+  width: 100%;
+  padding-right: 20px;
   padding-top: 200px;
-  position:absolute;
+  position: absolute;
 
-  background:url(https://www.transparenttextures.com/patterns/white-linen.png) repeat;
+  background: url(https://www.transparenttextures.com/patterns/white-linen.png) repeat;
 }
 .about-her h2, .about-her p{
-  color:#080d1c;
+  color: #080d1c;
 }
 .about-us-text{
   visibility: hidden;
@@ -321,24 +321,24 @@ p{
 .about-her .about-us-text.in-view{
   animation-name: fadeInLeft;
   animation-duration: 1s;
-  visibility:visible;
+  visibility: visible;
 }
 .about-her .about-us-text{
-  padding-left:100px;
+  padding-left: 100px;
 }
 .groom-header{ /*groom*/
-  position:absolute;
-  bottom:5px;
-  left:15%;
-  font-size:60px;
-  color:#bac3cc;
+  position: absolute;
+  bottom: -20px;
+  left: 15%;
+  font-size: 60px;
+  color: #bac3cc;
 }
 .bride-header{ /*bride*/
-  position:absolute;
-  top:5px;
-  right:15%;
-  color:#080d1c;
-  font-size:60px;
+  position: absolute;
+  top: 5px;
+  right: 15%;
+  color: #080d1c;
+  font-size: 60px;
 }
 
 
@@ -349,7 +349,7 @@ p{
   width: 600px;
   height: 450px;
   display: block;
-  visibility:hidden;
+  visibility: hidden;
 }
 .about-us-carousel img {
   position: relative;
@@ -659,7 +659,7 @@ figure.effect-layla:hover img {
 /*----------------------------*/
 
 .spacer{
-  height:10vh;
+  height: 10vh;
 }
 
 .my_divider img{

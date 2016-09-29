@@ -67,7 +67,7 @@
 }
 .parallax_group {
   position: relative;
-  height: 110vh;
+  min-height: 110vh;
   min-height:1000px;
   width: 101%;
   transform-style: preserve-3d;
@@ -129,7 +129,7 @@
 
 .group6b{ /*about her - light blue*/
   height: 50%;
-  background-image: url("../img/fog.png");
+  background-image: url("../img/fog-small.png");
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -140,7 +140,7 @@
 }
  .group8{ /*wedding info - green*/
   z-index: 1;
-  height: 220vh;
+  min-height: 220vh;
   background-color: #021000;
   will-change: top;
 }

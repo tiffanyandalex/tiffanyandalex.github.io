@@ -17,10 +17,10 @@
     left: -78px;
   }
 
-  .row .t-pic img{
+/*  .row .t-pic img{
     margin-top: 0px;
     margin-left: 0px;
-  }
+  }*/
 
   .parallax .group2{
     height: 350vh;
@@ -68,7 +68,6 @@
 .parallax_group {
   position: relative;
   min-height: 110vh;
-  min-height:1000px;
   width: 101%;
   transform-style: preserve-3d;
   margin: -1px
@@ -95,10 +94,9 @@
 
  .group2{ /*welcome/timeline - brown*/
   z-index: 0;
-  height: 500vh;
+  min-height: 220vh;
   background: #140b00;
   will-change: top;
-
 }
 
 
@@ -107,7 +105,7 @@
 }
 .group4{ /*gallery - dark blue*/
   z-index: 0;
-  height: 300vh;
+  min-height: 300vh;
   background: #0b0d21;
     will-change:top;
 }
@@ -117,21 +115,17 @@
 .group6{
   z-index: 1;
   width: 100%;
-  height: 240vh;
+  min-height: 140vh;
   will-change: top;
 }
 .group6a{ /*about him - dark blue*/
-  height: 50%;
   background: #080d1c;
   position: relative;
   width: 100%;
 }
 
-.group6b{ /*about her - light blue*/
-  height: 50%;
-  background-image: url("../img/fog-small.png");
-  background-size: cover;
-  background-position: bottom;
+.group6b{ /*about her - light gray-fog*/
+  background:#b8c3cd;
   position: relative;
   width: 100%;
 }

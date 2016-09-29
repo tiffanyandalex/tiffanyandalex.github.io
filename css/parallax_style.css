@@ -22,10 +22,10 @@
     margin-left: 0px;
   }*/
 
-  .parallax .group2{
+/*  .parallax .group2{
     height: 350vh;
   }
-
+*/
   .group3 .parallax_layer--ocean3a {
     transform: translateZ(-1.6px) scale(2.4);
     width: 211%;
@@ -36,6 +36,9 @@
     width: 115%;
   }
 }
+/*
+I'm doing a min-height instead of a set height, so you shouldn't need to set the heights of anything based on media screen anymore. 
+It should automatically resize to fit contents.
 
 @media screen and (max-height: 640px){
   .group2{
@@ -53,7 +56,7 @@
   .group2{
     height: 545vh;
   }
-}
+}*/
 /* ================================= */
 /* :::::::: Parallax Layout :::::::: */
 /* ================================= */
@@ -67,7 +70,7 @@
 }
 .parallax_group {
   position: relative;
-  min-height: 110vh;
+  min-height: 115vh;
   width: 101%;
   transform-style: preserve-3d;
   margin: -1px
@@ -77,7 +80,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 102%;
+  width: 100%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -134,7 +137,7 @@
 }
  .group8{ /*wedding info - green*/
   z-index: 1;
-  min-height: 220vh;
+  min-height: 200vh;
   background-color: #021000;
   will-change: top;
 }

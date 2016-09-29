@@ -139,6 +139,7 @@ It should automatically resize to fit contents.
   z-index: 1;
   min-height: 200vh;
   background-color: #021000;
+  background-image: url("https://www.transparenttextures.com/patterns/zig-zag.png");
   will-change: top;
 }
 .group9{ /*city*/

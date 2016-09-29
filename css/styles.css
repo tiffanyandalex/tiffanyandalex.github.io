@@ -64,13 +64,20 @@ h4{
 p{
   font-family: 'Josefin Slab';
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   color:white;
   margin:0;
 }
 
+a {
+  color:#ffe890;
+  text-decoration:underline;
+}
 
+a:hover{
+  color:lightgreen;
+}
 
 .our_story {
   text-align: center;
@@ -546,10 +553,6 @@ p{
   border-left: 1px solid white;
 }
 
-span {
-  color: white;
-  font-family: 'Amatic SC';
-}
 
 .group8 span{
   font-size:28px;
@@ -559,25 +562,21 @@ span {
 
 .wedding-img{
   max-width:100%;
+  height:auto;
 }
-figure.effect-layla img {
-  height: -webkit-calc(100% + 40px);
-  height: calc(100% + 40px);
+.wedding-info img {
   opacity: 0.7;
 }
 
-figure.effect-layla figcaption {
-  padding: 0em;
-}
 
-figure.effect-layla figcaption::before,
-figure.effect-layla figcaption::after {
+.wedding-info::before,
+.wedding-info::after{
   position: absolute;
   content: '';
   opacity: 0;
 }
 
-figure.effect-layla figcaption::before {
+.wedding-info::before{
   top: 100px;
   right: 30px;
   bottom: 50px;
@@ -590,7 +589,7 @@ figure.effect-layla figcaption::before {
   transform-origin: 0 0;
 }
 
-figure.effect-layla figcaption::after {
+.wedding-info::after{
   top: 30px;
   right: 50px;
   bottom: 30px;
@@ -603,13 +602,13 @@ figure.effect-layla figcaption::after {
   transform-origin: 100% 0;
 }
 
-figure.effect-layla h2 {
+.wedding-info h2 {
   padding-top: 0%;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
 
-figure.effect-layla p {
+.wedding-info p {
   padding: 0.5em 2em;
   text-transform: none;
   opacity: 0;
@@ -617,51 +616,55 @@ figure.effect-layla p {
   transform: translate3d(0,-10px,0);
 }
 
-figure.effect-layla img,
-figure.effect-layla h2 {
+
+.wedding-info img,
+.wedding-info h2{
   margin-top: 75px;
   margin-bottom: 20px;
   -webkit-transform: translate3d(0,-30px,0);
   transform: translate3d(0,-30px,0);
 }
 
-figure.effect-layla img{
+.wedding-info img{
+    margin-top: 100px;
     border: 9px solid rgba(255, 255, 255, 1);
     border-radius: 5px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
-figure.effect-layla img,
-figure.effect-layla figcaption::before,
-figure.effect-layla figcaption::after,
-figure.effect-layla p {
+
+
+.wedding-info img,
+.wedding-info::before,
+.wedding-info::after,
+.wedding-info p{
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect-layla:hover img {
+.wedding-info:hover img {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 
-figure.effect-layla:hover figcaption::before,
-figure.effect-layla:hover figcaption::after {
+.wedding-info:hover wedding-info::before,
+.wedding-info:hover wedding-info::after{
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-figure.effect-layla:hover h2,
-figure.effect-layla:hover p {
+.wedding-info:hover h2,
+.wedding-info:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 
-figure.effect-layla:hover figcaption::after,
-figure.effect-layla:hover h2,
-figure.effect-layla:hover p,
-figure.effect-layla:hover img {
+.wedding-info:hover .wedding-info::after,
+.wedding-info:hover h2,
+.wedding-info:hover p,
+.wedding-info:hover img {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }

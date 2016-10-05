@@ -77,9 +77,9 @@ It should automatically resize to fit contents.
 }
 .parallax_layer {
   position: absolute;
-/*  background-position: top center;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
   width: 100%;
   top: 0;
   right: 0;
@@ -160,7 +160,7 @@ It should automatically resize to fit contents.
   transform: translateZ(-2px) scale(3);
   background-image: url("../img/mountain/tinified/layer_1.jpg");
   z-index: -10;
-  position: fixed;
+  position: absolute;
   background-size: cover;
   width: 102%;
 }
@@ -168,24 +168,24 @@ It should automatically resize to fit contents.
   background-image: url("../img/mountain/tinified/layer_2.png");
   transform: translateZ(-1.3px) scale(2.3);
   z-index: -9;  
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--mountain3{
   background-image: url("../img/mountain/tinified/layer_3.png");
   transform: translateZ(-1px) scale(2);
   z-index: -8; 
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--mountain4 {
   transform: translateZ(-0.7px) scale(1.7);
   background-image: url("../img/mountain/tinified/layer_4.png");
   z-index: -7; 
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--mountain5 {
   background-image: url("../img/mountain/tinified/layer_5.png");
   z-index: -5; 
-  position: fixed;
+  position: absolute;
 }
 
 

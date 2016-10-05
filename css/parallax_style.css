@@ -200,7 +200,7 @@ It should automatically resize to fit contents.
   transform: translateZ(-2.3px) scale(3.3);
   background-image: url("../img/ocean/tinified/layer_1.jpg");
   z-index: -5;
-  position: fixed;
+  position: absolute;
   background-size: cover;
   width: 102%;
 }
@@ -208,50 +208,50 @@ It should automatically resize to fit contents.
   background-image: url("../img/ocean/tinified/layer_2.png");
   transform: translateZ(-2px) scale(3);
   z-index: -4;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--ocean3a {
   background-image: url("../img/ocean/tinified/layer_3a.png");
   transform: translateZ(-1.6px) scale(2.6);
   z-index: -3;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--ocean3b {
   background-image: url("../img/ocean/tinified/layer_3b.png");
   transform: translateZ(-1.3px) scale(2.3);
   z-index: -3;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--ocean4 {
   transform: translateZ(-1px) scale(2);
   background-image: url("../img/ocean/tinified/layer_4.png");
   z-index: -2;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--ocean5 {
   background-image: url("../img/ocean/tinified/layer_5.png");
   z-index: -1;
-  position: fixed;
+  position: absolute;
   top: -140px;
 }
 .parallax_layer--ocean6 {
   background-image: url("../img/ocean/tinified/layer_6.png");
   z-index: -4;
   transform: translateZ(-1.5px) scale(2.5);
-  position: fixed;
+  position: absolute;
   top: 10px;
 }
 .parallax_layer--ocean7 {
   background-image: url("../img/ocean/tinified/layer_7.png");
   z-index: 1;
   transform: translateZ(-1px) scale(2);
-  position: fixed;
+  position: absolute;
   top: 20px;
 }
 .parallax_layer--ocean8 {
   background-image: url("../img/ocean/tinified/layer_8.png");
   z-index: 2;
-  position: fixed;
+  position: absolute;
 }
 
 
@@ -264,7 +264,7 @@ It should automatically resize to fit contents.
   transform: translateZ(-1.75px) scale(2.75);
   background-image: url("../img/star/tinified/layer_1.png");
   z-index: -5;
-  position: fixed;
+  position: absolute;
   background-size: cover;
   width: 102%;
 }
@@ -272,24 +272,24 @@ It should automatically resize to fit contents.
   background-image: url("../img/star/tinified/layer_2.png");
   transform: translateZ(-1.25px) scale(2.25);
   z-index: -4;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--star3 {
   background-image: url("../img/star/tinified/layer_3.png");
   transform: translateZ(-1px) scale(2);
   z-index: -3;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--star4 {
   background-image: url("../img/star/tinified/layer_4.png");
   z-index: -2;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--star5 {
   background-image: url("../img/star/tinified/layer_5.png");
   z-index: -4;
   transform: translateZ(-.5px) scale(1.5);
-  position: fixed;
+  position: absolute;
 }
 
 
@@ -302,7 +302,7 @@ It should automatically resize to fit contents.
   transform: translateZ(-1.75px) scale(2.75);
   background-image: url("../img/bike/tinified/artflow_201609212124.jpg");
   z-index: -10;
-  position: fixed;
+  position: absolute;
   background-size: cover;
   width: 102%;
 }
@@ -310,13 +310,13 @@ It should automatically resize to fit contents.
   background-image: url("../img/bike/tinified/artflow_201609212220.png"); /*mountain*/
   transform: translateZ(-1.5px) scale(2.5);
   z-index: -9;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--bike2b {
   transform: translateZ(-1.2px) scale(2.2);
   background-image: url("../img/bike/tinified/artflow_201609220948.png"); /*fog and birds*/
   z-index: -8;
-  position: fixed;
+  position: absolute;
   background-size: cover;
   width: 102%;
 }
@@ -324,33 +324,33 @@ It should automatically resize to fit contents.
   background-image: url("../img/bike/tinified/artflow_201609221310.png"); /*water*/
   transform: translateZ(-1px) scale(2);
   z-index: -7;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--bike4 {
   background-image: url("../img/bike/tinified/artflow_201609221141.png"); /*bridge*/
   z-index: -6;
   transform: translateZ(-.8px) scale(1.8);
-  position: fixed;
+  position: absolute;
 }
 
 .parallax_layer--bike5 {
   background-image: url("../img/bike/tinified/artflow_201609221157.png"); /*grass-back*/
   z-index: -4;
   transform: translateZ(-.5px) scale(1.5);
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--bike6 {
   background-image: url("../img/bike/tinified/artflow_201609221258.png");
   z-index: -3;
   transform: translateZ(-.25px) scale(1.25);
-  position: fixed;
+  position: absolute;
 }
 
 
 .parallax_layer--bike7 {
   background-image: url("../img/bike/tinified/artflow_201609212217.png");
   z-index: 0;
-  position: fixed;
+  position: absolute;
 }
 
 
@@ -364,7 +364,7 @@ It should automatically resize to fit contents.
   transform: translateZ(-2.5px) scale(3.5);
   background-image: url("../img/city/tinified/layer_1.jpg");
   z-index:1;
-  position: fixed;
+  position: absolute;
   background-size: cover;
   width: 102%;
 }
@@ -372,28 +372,28 @@ It should automatically resize to fit contents.
   background-image: url("../img/city/tinified/layer_2.png");
   transform: translateZ(-2px) scale(3);
   z-index: 2;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--city3 {
   background-image: url("../img/city/tinified/layer_3.png");
   transform: translateZ(-1.3px) scale(2.3);
   z-index: 3;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--city4 {
   transform: translateZ(-.7px) scale(1.7);
   background-image: url("../img/city/tinified/layer_4.png");
   z-index: 4;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--city5 {
   background-image: url("../img/city/tinified/layer_5.png");
    transform: translateZ(-.5px) scale(1.5);
   z-index: 5;
-  position: fixed;
+  position: absolute;
 }
 .parallax_layer--city6 {
   background-image: url("../img/city/tinified/layer_6.png");
   z-index: 6;
-  position: fixed;
+  position: absolute;
 }

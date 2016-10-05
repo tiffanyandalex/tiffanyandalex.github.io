@@ -77,9 +77,9 @@ It should automatically resize to fit contents.
 }
 .parallax_layer {
   position: absolute;
-  background-position: top center;
+/*  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   width: 100%;
   top: 0;
   right: 0;

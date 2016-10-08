@@ -248,6 +248,11 @@ a:hover{
 
 /*----------------GALLERY-----------*/
 
+@media screen and (max-width: 600px){
+  .carousel-gallery{
+    visibility:visible;
+  }
+}
 
 .carousel-gallery {
   top: 50px;

@@ -70,7 +70,7 @@ It should automatically resize to fit contents.
 }
 .parallax_group {
   position: relative;
-  min-height: 115vh;
+  min-height: 120vh;
   width: 101%;
   transform-style: preserve-3d;
   margin: -1px
@@ -110,7 +110,7 @@ It should automatically resize to fit contents.
   z-index: 0;
   min-height: 300vh;
   background: #0b0d21;
-    will-change:top;
+  will-change:top;
 }
 .group5{ /*stars*/
   z-index:1;
@@ -118,7 +118,7 @@ It should automatically resize to fit contents.
 .group6{
   z-index: 1;
   width: 100%;
-  min-height: 140vh;
+  min-height: 150vh;
   will-change: top;
 }
 .group6a{ /*about him - dark blue*/

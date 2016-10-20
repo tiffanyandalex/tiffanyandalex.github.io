@@ -1,4 +1,18 @@
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+.carousel {
+  height:300px;
+  visibility: visible;
+}
+
+
+}
+
 /* Custom Stylesheet */
+
+
+
 
 body {
   font-family: 'Josefin Slab';
@@ -248,11 +262,6 @@ a:hover{
 
 /*----------------GALLERY-----------*/
 
-@media screen and (max-height: 600px){
-  .carousel-gallery{
-    visibility:visible;
-  }
-}
 
 .carousel-gallery {
   top: 50px;

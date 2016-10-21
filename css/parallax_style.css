@@ -17,15 +17,6 @@
     left: -78px;
   }
 
-/*  .row .t-pic img{
-    margin-top: 0px;
-    margin-left: 0px;
-  }*/
-
-/*  .parallax .group2{
-    height: 350vh;
-  }
-*/
   .group3 .parallax_layer--ocean3a {
     transform: translateZ(-1.6px) scale(2.4);
     width: 211%;
@@ -36,27 +27,7 @@
     width: 115%;
   }
 }
-/*
-I'm doing a min-height instead of a set height, so you shouldn't need to set the heights of anything based on media screen anymore. 
-It should automatically resize to fit contents.
 
-@media screen and (max-height: 640px){
-  .group2{
-    height: 515vh;
-  }
-}
-
-@media screen and (max-height: 620px){
-  .group2{
-    height: 530vh;
-  }
-}
-
-@media screen and (max-height: 610px){
-  .group2{
-    height: 545vh;
-  }
-}*/
 /* ================================= */
 /* :::::::: Parallax Layout :::::::: */
 /* ================================= */
@@ -108,9 +79,11 @@ It should automatically resize to fit contents.
 }
 .group4{ /*gallery - dark blue*/
   z-index: 0;
-  min-height: 300vh;
-  background: #0b0d21;
+  min-height: 280vh;
   will-change:top;
+  background-color: #0b0d21;
+  background: url("../img/darkblue.png") repeat;
+  
 }
 .group5{ /*stars*/
   z-index:1;

@@ -71,7 +71,7 @@ $(document).ready(function(){
 
     //--------------TIMELINE----------------//
 
-    var items = document.querySelectorAll(".carousel, .intro, .t-date, p, .about-us-text");
+     var items = document.querySelectorAll(".carousel, .intro, .t-date, p, .about-us-text");
 
     function scrollFunction() {
         for (var i = 0; i < items.length; i++) {

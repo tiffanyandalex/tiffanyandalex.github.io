@@ -10,7 +10,14 @@ and (max-device-width : 667px) {
 }
 
 /* Custom Stylesheet */
-
+ @font-face { 
+  font-family: 'Roskrift'; 
+  src: url('fonts/roskrift/Roskrift.ttf'); 
+} 
+/* @font-face { 
+  font-family: 'Roskrift_clean'; 
+  src: url('fonts/roskrift_clean/Roskrift_Clean.ttf'); 
+} */
 
 
 
@@ -35,13 +42,14 @@ ul {
 }
 
 h1{
-  font-family: 'Roboto Slab';
-  font-size: 5.000em;
-  font-weight: 100;
-  font-style: normal;
-  color: #ffe890;
+/*  font-family: 'Roboto Slab';*/
+  font-family: 'Roskrift';
+  font-size: 110px;
+  font-style: italic;
+  text-shadow: 6px 9px rgba(0, 0, 0, 0.8);
+  color: rgba(255, 232, 144, 0.8);
   text-align: center;
-  margin-bottom: 10px;
+  padding: 80px;
 }
 
 h2{
@@ -50,18 +58,19 @@ h2{
   font-size: 2.813em;
   font-weight: normal;
   font-style: normal;
-  color:white;
+  color:rgba(255, 255, 255, 0.7);
   text-align: center;
 }
 
 h3{
-  font-family: 'Amatic SC';
+  font-family: 'Roskrift';
   font-size: 5.5em;
-  font-weight: normal;
   font-style: normal;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 6px 9px rgba(0, 0, 0, 0.8);
   text-align: center;
   padding-top: 50px;
+  padding-bottom:10px;
   margin: 0;
 }
 
@@ -69,10 +78,18 @@ h4{
   font-family: 'Amatic SC';
   font-size: 32px;
   font-weight: normal;
-  color: #ffe890;
+  color: rgba(255, 232, 144, 0.7);
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 10px;
+}
+h5{
+  font-family: 'Roboto Slab';
+  font-size:36px;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 4px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-top:30px;
+
 }
 
 p{
@@ -102,14 +119,12 @@ a:hover{
 .gallery {
   margin-top: 0;
   padding-top: 70px;
-  color: white;
+  padding-bottom:40px;
   font-size: 5em;
 }
 
 .the-wedding {
   padding-top: 150px;
-  text-align: center;
-  color: white;
 }
 
 .wedding-img {
@@ -130,9 +145,15 @@ a:hover{
 
 }
 
+.acknowledgements{
+    background-color: #521d13;
+    margin-top: -10px;
+}
+
 .acknowledgements p{
   text-align: center;
   color: gray;
+  z-index:100;
 }
 
 /*--------INTRODUCTION------------*/
@@ -191,6 +212,7 @@ a:hover{
   padding-left: 30px;
   font-size: 18px;
   color:gray;
+  text-shadow: 4px 3px rgba(0, 0, 0, 0.8);
   transform: scale(0.9, 0.9);
   display: table-cell;
   vertical-align: middle;
@@ -210,6 +232,7 @@ a:hover{
   margin: 0;
   display: table-cell;
   vertical-align: middle;
+  text-shadow: 4px 3px rgba(0, 0, 0, 0.8);
 }
 .t-date {
   transform: scale(0.9,0.9);
@@ -262,6 +285,9 @@ a:hover{
 
 /*----------------GALLERY-----------*/
 
+/*#section2{
+background-color: #0b0d21;
+}*/
 
 .carousel-gallery {
   top: 50px;
@@ -270,7 +296,8 @@ a:hover{
   width: calc(60%);
   height: 600px;
   display: block;
-  visibility: hidden;
+  visibility: hidden;/*
+  background-color: #0b0d21;*/
 }
 
 .carousel.in-view{
@@ -286,6 +313,11 @@ a:hover{
   max-width: 100%;
   max-height: 600px;
   display: block;
+  border-width: 18px;
+  border-style: solid;
+  border-color: #FFF;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .8); 
 }
 
 .slick-slide {
@@ -308,7 +340,6 @@ a:hover{
   z-index: 50;
 }
 .about-us{
-  color: #bac3cc;
   padding-top: 100px;
 }
 .about-him{
@@ -317,7 +348,6 @@ a:hover{
   bottom: 0;
   position: relative;
   padding-top: 50px;
-  background: url(https://www.transparenttextures.com/patterns/checkered-pattern.png) repeat;
 }
 .about-him h2, .about-him p{
   color: #bac3cc;
@@ -528,9 +558,10 @@ a:hover{
   margin-right: 10px;
   padding: .02em .02em;
   color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
   font-family: 'Amatic SC';
   font-size: 16px;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;

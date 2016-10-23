@@ -5,11 +5,7 @@
    we need to append an ancestor's class to overriding styles, i.e. the media query .group2{} styles will not 
    override the other .group2{}, so we append .parallax .group2{} to override due to specificity */
 
-/* Mobile */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-
-}
 /* Tablet Portrait */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   .group1 .parallax_layer--mountain5 {
@@ -28,6 +24,35 @@
   }
 }
 
+/*Different aspect ratios--tablets and monitors*/
+/*min aspect ratio 1.33*/
+@media screen and (min-aspect-ratio: 4/3) and (min-device-width : 768px){
+  .parallax_group{
+      min-height:120vh;
+  }
+}
+/*min aspect ratio 1.6*/
+@media screen and (min-aspect-ratio: 16/10)and (max-aspect-ratio: 4/3) and (min-device-width : 768px){
+.parallax_group{
+      min-height: 130vh;
+  }
+}
+
+/*min aspect ratio 1.78*/
+@media screen and (min-aspect-ratio: 16/9) and (max-aspect-ratio: 16/10) and (min-device-width : 768px){
+  .parallax_group{
+      min-height: 1600px;
+  }
+}
+
+/* Mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+.parallax_group{
+      min-height:120vh;
+  }
+
+}
+
 /* ================================= */
 /* :::::::: Parallax Layout :::::::: */
 /* ================================= */
@@ -41,7 +66,6 @@
 }
 .parallax_group {
   position: relative;
-  min-height: 120vh;
   width: 101%;
   transform-style: preserve-3d;
   margin: -1px
@@ -77,11 +101,20 @@
 .group3{ /*ocean*/
   z-index: -10;
 }
-.group4{ /*gallery - dark blue*/
+.group4a{ /*gallery - dark blue*/
   z-index: 0;
-  min-height: 280vh;
+  height: 200vh;
   will-change:top;
   background-color: #0b0d21;
+  background: url("../img/darkblue.png") repeat;
+  
+}
+.group4b{ /*gallery - dark blue*/
+  z-index: -1;
+  height: 150vh;
+  margin-top: 300px;
+  transform: translateZ(-1.7px) scale(2.7);
+  will-change:top;
   background: url("../img/darkblue.png") repeat;
   
 }
@@ -91,19 +124,19 @@
 .group6{
   z-index: 1;
   width: 100%;
-  min-height: 150vh;
+  min-height: 170vh;
   will-change: top;
 }
 .group6a{ /*about him - dark blue*/
   background: #080d1c;
   position: relative;
-  width: 100%;
+  min-height:90vh;
 }
 
 .group6b{ /*about her - light gray-fog*/
   background:#b8c3cd;
   position: relative;
-  width: 100%;
+  min-height:90vh;
 }
 .group7{ /*bike*/
   z-index: 0;
@@ -170,7 +203,7 @@
 
 
 .parallax_layer--ocean1 {
-  transform: translateZ(-2.3px) scale(3.3);
+  transform: translateZ(-2.5px) scale(3.5);
   background-image: url("../img/ocean/tinified/layer_1.jpg");
   z-index: -5;
   position: absolute;
@@ -179,19 +212,19 @@
 }
 .parallax_layer--ocean2 {
   background-image: url("../img/ocean/tinified/layer_2.png");
-  transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2.2px) scale(3.2);
   z-index: -4;
   position: absolute;
 }
 .parallax_layer--ocean3a {
   background-image: url("../img/ocean/tinified/layer_3a.png");
-  transform: translateZ(-1.6px) scale(2.6);
+  transform: translateZ(-2px) scale(3);
   z-index: -3;
   position: absolute;
 }
 .parallax_layer--ocean3b {
   background-image: url("../img/ocean/tinified/layer_3b.png");
-  transform: translateZ(-1.3px) scale(2.3);
+  transform: translateZ(-1.75px) scale(2.75);
   z-index: -3;
   position: absolute;
 }
@@ -234,7 +267,7 @@
 
 
 .parallax_layer--star1 {
-  transform: translateZ(-1.75px) scale(2.75);
+  transform: translateZ(-1.7px) scale(2.7);
   background-image: url("../img/star/tinified/layer_1.png");
   z-index: -5;
   position: absolute;

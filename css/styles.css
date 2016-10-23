@@ -64,7 +64,7 @@ h2{
 
 h3{
   font-family: 'Roskrift';
-  font-size: 5.5em;
+  font-size: 6em;
   font-style: normal;
   color: rgba(255, 255, 255, 0.7);
   text-shadow: 6px 9px rgba(0, 0, 0, 0.8);
@@ -118,9 +118,8 @@ a:hover{
 
 .gallery {
   margin-top: 0;
-  padding-top: 70px;
+  padding-top: 200px;
   padding-bottom:40px;
-  font-size: 5em;
 }
 
 .the-wedding {
@@ -340,29 +339,35 @@ background-color: #0b0d21;
   z-index: 50;
 }
 .about-us{
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .about-him{
   height: 75%;
   width: 100%;
   bottom: 0;
   position: relative;
-  padding-top: 50px;
+  padding-top: 150px;
+  padding-bottom:50px;
 }
 .about-him h2, .about-him p{
   color: #bac3cc;
 }
-
+.about-us-text h2{
+  font-size:5em;
+  padding: 20px;
+}
 .about-her{
   height: 75%;
   width: 100%;
   padding-right: 20px;
+  padding-top: 200px;
   position: relative;
   background: url(https://www.transparenttextures.com/patterns/white-linen.png) repeat;
 }
 .about-her h2, .about-her p{
   color: #080d1c;
 }
+
 .about-us-text{
   visibility: hidden;
 }
@@ -384,17 +389,17 @@ background-color: #0b0d21;
   padding-left: 100px;
   padding-bottom:50px;
 }
-.groom-header{ /*groom*/
+/*.groom-header{ 
   font-size: 60px;
   color: #bac3cc;
   padding-bottom:25px;
 }
-.bride-header{ /*bride*/
+.bride-header{ 
   color: #080d1c;
   font-size: 60px;
   padding-top:25px;
   padding-bottom:70px;
-}
+}*/
 
 .fog{
   width:100%;
@@ -403,10 +408,9 @@ background-color: #0b0d21;
 
 /*-------------------ABOUT US CAROUSELS-----------*/
 .about-us-carousel {
-  align-self: bottom;
+  align-self: center;
   margin: auto;
-  width: 600px;
-  max-width:100%;
+  width: 90%;
   height: 450px;
   display: block;
   visibility: hidden;

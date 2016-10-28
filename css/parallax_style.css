@@ -64,6 +64,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: #521d13;
+  -webkit-overflow-scrolling: touch;
 }
 .parallax_group {
   position: relative;

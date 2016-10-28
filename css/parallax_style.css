@@ -62,7 +62,7 @@
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   background-color: #521d13;
 }
 .parallax_group {
@@ -124,7 +124,7 @@
 }
 .group6{
   z-index: 1;
-  width: 100%;
+  width: 101%;
   min-height: 170vh;
   will-change: top;
 }

@@ -27,7 +27,6 @@
 	position: relative;
 }
 
-/* http://nicolasgallagher.com/micro-clearfix-hack/ */
 .gamma-gallery:before,
 .gamma-gallery:after {
     content: " ";
@@ -162,8 +161,7 @@ button.gamma-btn-sspause:before {
 
 .gamma-single-view {
 	position:fixed;
-	/*top: 300px;
-*/	top:0;
+	top:0;
 	left: 0;
 	width: 100%;
 	height: 100%;	
@@ -189,7 +187,7 @@ button.gamma-btn-sspause:before {
 	cursor: pointer;
 }
 
-/*.gamma-description-wrapper {
+.gamma-description-wrapper {
 	background: rgba(0,0,0,0.7);
 	position: absolute;
 	bottom: 0px;
@@ -197,7 +195,7 @@ button.gamma-btn-sspause:before {
 	right: 0px;
 	z-index: 10;
 	padding: 5px 0;
-}*/
+}
 
 .gamma-single-view .gamma-description {
 	background: transparent;
@@ -207,7 +205,7 @@ button.gamma-btn-sspause:before {
 	right: auto;
 	top: auto;
 }*/
-/*
+
 
 .gamma-single-view .gamma-description h3 {
 	font-size: 15px;
@@ -231,11 +229,11 @@ button.gamma-btn-sspause:before {
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-/*
+
 .gamma-nav span.gamma-next {
 	left: auto;
 	right: 20px;
-}*/
+}
 
 .gamma-nav span:before {
 	color: #fff;
@@ -251,7 +249,7 @@ button.gamma-btn-sspause:before {
 	display: block;
 	margin: 0;
 	width: auto;
-}/*
+}
 
 .gamma-nav span.gamma-prev:before {
 	content: '\e75d';
@@ -260,7 +258,7 @@ button.gamma-btn-sspause:before {
 .gamma-nav span.gamma-next:before {
 	content: '\e75e';
 }
-*/
+
 .gamma-img-fly {
 	position: absolute;
 	top: 0;

@@ -232,7 +232,8 @@ var Gamma = (function() {
 		_config = function() {
 
 			Gamma.container = $( '#gamma-container' );
-			Gamma.overlay = Gamma.container.find( 'div.gamma-overlay' );
+			// Gamma.overlay = Gamma.container.find( 'div.gamma-overlay' );
+			Gamma.overlay = $( '#gamma-overlay' );
 			Gamma.controls = Gamma.container.children( 'div.gamma-options' );
 			Gamma.gallery = Gamma.container.children( 'ul.gamma-gallery' );
 			Gamma.items = Gamma.gallery.children();
@@ -257,10 +258,15 @@ var Gamma = (function() {
 			if( !Gamma.singleview ) {
 
 				$( '<div class="gamma-single-view"><div class="gamma-options gamma-options-single"><div class="gamma-buttons"><button class="gamma-btn-close"></button></div></div></div>' )
-				.appendTo( Gamma.container );
+				// .appendTo( Gamma.container );
+				.appendTo( $body);
 
-				Gamma.singleview = Gamma.container.children( 'div.gamma-single-view' );
+				// Gamma.singleview = Gamma.container.children( 'div.gamma-single-view' );
+				// Gamma.svclose = Gamma.singleview.find( 'button.gamma-btn-close' );
+
+				Gamma.singleview = $body.children( 'div.gamma-single-view' );
 				Gamma.svclose = Gamma.singleview.find( 'button.gamma-btn-close' );
+
 
 				_initEvents( 'singleview' );
 

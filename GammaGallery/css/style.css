@@ -162,7 +162,8 @@ button.gamma-btn-sspause:before {
 
 .gamma-single-view {
 	position:fixed;
-	top: 300px;
+	/*top: 300px;
+*/	top:0;
 	left: 0;
 	width: 100%;
 	height: 100%;	
@@ -260,12 +261,12 @@ button.gamma-btn-sspause:before {
 	content: '\e75e';
 }
 */
-/*.gamma-img-fly {
+.gamma-img-fly {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 99999;
-}*/
+}
 
 /* Loaders */
 

@@ -28,7 +28,7 @@
 
 body {
   font-family: 'Josefin Slab';
-   
+
 }
 
 ul {
@@ -183,9 +183,9 @@ a:hover{
   transform: rotate(90deg);
 }*/
 
-#timeline-img-11{
+/*#timeline-img-11{
   height: 150%;
-}
+}*/
 
 /*----------------TIMELINE--------------*/
 
@@ -193,7 +193,7 @@ a:hover{
   height: 200px;
 }
 
-.timeline .col-md-4, .col-md-2, .col-md-6, .col-md-3{
+.timeline .col-md-4, .col-md-2, .col-md-6, .col-md-3, .col-xs-1, .col-xs-3, .col-xs-8, .col-sm-4, .col-sm-2, .col-sm-6{
   height: 100%;
 }
 .timeline .t-text{
@@ -216,7 +216,7 @@ a:hover{
 /*  padding-top: 100px;*/
   padding-left: 30px;
   color:gray;
-  text-shadow: 4px 3px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
   transform: scale(0.9, 0.9);
   display: table-cell;
   vertical-align: middle;
@@ -261,8 +261,10 @@ a:hover{
   opacity:0;
   transition: all 0.7s ease-in-out;
   border: 8px solid white;
+  min-width:90px;
   max-width: 100%;
   vertical-align: middle;
+  z-index:2;
 }
 .timeline .row:nth-child(even) img{
   transform: scale(0.9,0.9) rotate(4deg);

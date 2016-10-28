@@ -46,10 +46,11 @@
 }
 
 /* Mobile */
-@media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
 .parallax_group{
       min-height:120vh;
   }
+
 
 }
 
@@ -103,7 +104,7 @@
 }
 .group4a{ /*gallery - dark blue*/
   z-index: 0;
-  height: 200vh;
+  min-height: 200vh;
   will-change:top;
   background-color: #0b0d21;
   background: url("../img/darkblue.png") repeat;

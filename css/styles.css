@@ -1,12 +1,17 @@
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {
-.carousel {
-  height:300px;
-  visibility: visible;
+@media only screen and (min-device-width : 320px) and (max-device-width : 740px){
+/*  .carousel {
+    height:300px;
+    visibility: visible;
+  }*/
+  .carousel-gallery, .about-us-text, .about-us-carousel, .intro{
+    visibility: visible;
+  }
 }
 
-
+@media only screen and (min-device-width : 741px) {
+    .carousel-gallery, .about-us-text, .about-us-carousel, .intro{
+    visibility: hidden;
+  }
 }
 
 /* Custom Stylesheet */
@@ -37,8 +42,8 @@ ul {
   color:white;
   text-align: center;
   padding-top: 90px;
-  width: 100%;
-  visibility: hidden;
+  width: 100%;/*
+  visibility: hidden;*/
 }
 
 h1{
@@ -119,7 +124,7 @@ a:hover{
 .gallery {
   margin-top: 0;
   padding-top: 200px;
-  padding-bottom:40px;
+  padding-bottom:100px;
 }
 
 .the-wedding {
@@ -209,7 +214,6 @@ a:hover{
 .t-text p{
 /*  padding-top: 100px;*/
   padding-left: 30px;
-  font-size: 18px;
   color:gray;
   text-shadow: 4px 3px rgba(0, 0, 0, 0.8);
   transform: scale(0.9, 0.9);
@@ -227,7 +231,7 @@ a:hover{
 
 .t-date h4{
   font-size: 2.5em;
-  color: gray;
+  color:gray;;
   margin: 0;
   display: table-cell;
   vertical-align: middle;
@@ -254,16 +258,22 @@ a:hover{
   height: auto;
   max-height:200%;
   opacity:0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
   border: 8px solid white;
-  transform: scale(0.9,0.9);
   max-width: 100%;
   vertical-align: middle;
 }
+.timeline .row:nth-child(even) img{
+  transform: scale(0.9,0.9) rotate(4deg);
+}
+.timeline .row:nth-child(odd) img{
+  transform: scale(0.9,0.9) rotate(-4deg);
+}
+
 
 .timeline .row:hover p{
   transform: scale(1, 1);
-  color: white;
+  color:lightgray;
   transition: all 0.5s ease-in-out;
 }
 
@@ -272,34 +282,37 @@ a:hover{
   transition: all 0.5s ease-in-out;
 }
 .timeline .row:hover h4{
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
   color: #ffe890;
 }
 
-.timeline .row:hover img{
+.timeline .row:nth-child(even):hover img{
   opacity: 1;
-  transform: scale(1,1);
+  transform: scale(1,1) rotate(4deg);
   transition: all 0.5s ease-in-out; 
 }
-
+.timeline .row:nth-child(odd):hover img{
+  opacity: 1;
+  transform: scale(1,1) rotate(-4deg);
+  transition: all 0.5s ease-in-out; 
+}
 /*----------------GALLERY-----------*/
 
 /*#section2{
 background-color: #0b0d21;
 }*/
 
-.carousel-gallery {
+/*.carousel-gallery {
   top: 50px;
   align-self: center;
   margin: 0 auto;
   width: calc(60%);
   height: 600px;
-  display: block;
-  visibility: hidden;/*
-  background-color: #0b0d21;*/
+  display: block;*//*
+  visibility: hidden;
 }
-
-.carousel.in-view{
+*/
+/*.carousel.in-view{
   animation-name: fadeIn;
   animation-duration: 2s;
   visibility: visible;
@@ -323,7 +336,14 @@ background-color: #0b0d21;
   width: 703px;
 }
 
+*/
 
+
+.gallery-container{
+  width:90%;
+  position:relative;
+  margin-right:10%;
+}
 
 /*-------------------------------------------*/
 /*------------------ABOUT US ----------------*/
@@ -369,7 +389,7 @@ background-color: #0b0d21;
 }
 
 .about-us-text{
-  visibility: hidden;
+ /* visibility: hidden;*/
 }
 .about-him .about-us-text.in-view{
   animation-name: fadeInRight;
@@ -412,8 +432,8 @@ background-color: #0b0d21;
   margin: auto;
   width: 90%;
   height: 450px;
-  display: block;
-  visibility: hidden;
+  display: block;/*
+  visibility: hidden;*/
 }
 .about-us-carousel img {
   position: relative;

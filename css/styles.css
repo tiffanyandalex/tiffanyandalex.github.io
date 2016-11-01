@@ -28,12 +28,14 @@
 
 body {
   font-family: 'Josefin Slab';
+  font-size: 14px;
 
 }
 
 ul {
   list-style-type: none;
-  margin-right: 80px;
+  /*margin-right: 80px;*/
+  margin-right: 8em;
 }
 
 
@@ -42,41 +44,35 @@ ul {
 .intro{
   color:white;
   text-align: center;
-  padding-top: 90px;
-  width: 100%;/*
-  visibility: hidden;*/
+  padding-top: 5.5em;
+  width: 100%;
 }
 
 h1{
-/*  font-family: 'Roboto Slab';*/
-  font-family: 'Roskrift';
-  font-size: 110px;
-  font-style: italic;
-  text-shadow: 6px 9px rgba(0, 0, 0, 0.8);
-  color: rgba(255, 232, 144, 0.8);
+  font-family: 'Allura', cursive;
+  font-size: 7.8em;
+  text-shadow: .06em .06em rgba(0, 0, 0, 0.8);
+  color: #BCA371;
   text-align: center;
-  padding: 80px;
 }
 
 h2{
   font-family: 'Amatic SC';
-  line-height: 0.9;
-  font-size: 2.813em;
+  line-height: 1;
+  font-size: 2.9em;
   font-weight: normal;
   font-style: normal;
-  color:rgba(255, 255, 255, 0.7);
+  color:#807D67;
   text-align: center;
 }
 
 h3{
-  font-family: 'Roskrift';
+  font-family: 'Allura', cursive;
   font-size: 6em;
   font-style: normal;
-  color: rgba(255, 255, 255, 0.7);
+  color: #b7b8bf;
   text-shadow: 6px 9px rgba(0, 0, 0, 0.8);
   text-align: center;
-  padding-top: 50px;
-  padding-bottom:10px;
   margin: 0;
 }
 
@@ -84,13 +80,14 @@ h4{
   font-family: 'Amatic SC';
   font-size: 32px;
   font-weight: normal;
-  color: rgba(255, 232, 144, 0.7);
+  color: #BCA371;
   text-align: center;
   margin-bottom: 10px;
 }
 h5{
-  font-family: 'Roboto Slab';
-  font-size:36px;
+  /*font-family: 'Roboto Slab';*/
+  font-family: 'Josefin Slab';
+  font-size:1.5em;
   color: rgba(255, 255, 255, 0.8);
   text-shadow: 4px 3px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -100,10 +97,9 @@ h5{
 
 p{
   font-family: 'Josefin Slab';
-  font-size: 18px;
-  font-weight: 100;
-  font-style: normal;
-  color:white;
+  font-size: 1.2em;
+  font-weight: 300;
+  color:#b7b8bf;
   margin:0;
 }
 
@@ -152,7 +148,7 @@ a:hover{
 
 .acknowledgements{
     background-color: #521d13;
-    margin-top: -10px;
+    margin-bottom: 0px;
 }
 
 .acknowledgements p{
@@ -177,16 +173,6 @@ a:hover{
   padding-bottom: 130px;
 }
 
-/*--------TIMELINE PICTURES------------*/
-
-/*#timeline-img-4{
-  transform: rotate(90deg);
-}*/
-
-/*#timeline-img-11{
-  height: 150%;
-}*/
-
 /*----------------TIMELINE--------------*/
 
 .timeline .row{
@@ -197,7 +183,7 @@ a:hover{
   height: 100%;
 }
 .timeline .t-text{
-  border-left: 5px solid white;
+  border-left: 5px solid #b7b8bf;
   display: table;
 }
 
@@ -209,12 +195,11 @@ a:hover{
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #fff;
+  background: #b7b8bf;
   opacity: 1;
 }
 .t-text p{
-/*  padding-top: 100px;*/
-  padding-left: 30px;
+  padding-left: 1.5em;
   color:gray;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
   transform: scale(0.9, 0.9);
@@ -260,8 +245,9 @@ a:hover{
   max-height:200%;
   opacity:0;
   transition: all 0.7s ease-in-out;
-  border: 8px solid white;
-  min-width:90px;
+  border: 0.47em solid lightgrey;
+  box-shadow:4px 3px rgba(0, 0, 0, 0.8);
+  min-width:7.3em;
   max-width: 100%;
   vertical-align: middle;
   z-index:2;
@@ -286,7 +272,7 @@ a:hover{
 }
 .timeline .row:hover h4{
   transition: all 1s ease-in-out;
-  color: #ffe890;
+  color: #BCA371;
 }
 
 .timeline .row:nth-child(even):hover img{
@@ -299,47 +285,11 @@ a:hover{
   transform: scale(1,1) rotate(-4deg);
   transition: all 0.5s ease-in-out; 
 }
+
+.timeline {
+  padding-bottom:4.5em;
+}
 /*----------------GALLERY-----------*/
-
-/*#section2{
-background-color: #0b0d21;
-}*/
-
-/*.carousel-gallery {
-  top: 50px;
-  align-self: center;
-  margin: 0 auto;
-  width: calc(60%);
-  height: 600px;
-  display: block;*//*
-  visibility: hidden;
-}
-*/
-/*.carousel.in-view{
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  visibility: visible;
-}
-
-.carousel img {
-  position: relative;
-  margin: auto;
-  vertical-align: middle;
-  max-width: 100%;
-  max-height: 600px;
-  display: block;
-  border-width: 18px;
-  border-style: solid;
-  border-color: #FFF;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .8); 
-}
-
-.slick-slide {
-  width: 703px;
-}
-
-*/
 
 
 .gallery-container{
@@ -587,8 +537,8 @@ background-color: #0b0d21;
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
   font-family: 'Amatic SC';
-  font-size: 16px;
-  font-size: 2.7rem;
+  /*font-size: 16px;*/
+  font-size: 2.9rem;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
@@ -616,7 +566,7 @@ background-color: #0b0d21;
   transform: scale(1);
 }
 /*---------------*/
-/***** Layla *****/
+/** Wedding info */
 /*---------------*/
 
 .divider {
@@ -637,109 +587,43 @@ background-color: #0b0d21;
   height:auto;
 }
 .wedding-info img {
-  opacity: 0.7;
-}
-
-
-.wedding-info::before,
-.wedding-info::after{
-  position: absolute;
-  content: '';
-  opacity: 0;
-}
-
-.wedding-info::before{
-  top: 100px;
-  right: 30px;
-  bottom: 50px;
-  left: 30px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: scale(0,1);
-  transform: scale(0,1);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
-
-.wedding-info::after{
-  top: 30px;
-  right: 50px;
-  bottom: 30px;
-  left: 50px;
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
-  -webkit-transform: scale(1,0);
-  transform: scale(1,0);
-  -webkit-transform-origin: 100% 0;
-  transform-origin: 100% 0;
+  opacity: 1;
 }
 
 .wedding-info h2 {
   padding-top: 0%;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
 }
 
 .wedding-info p {
   padding: 0.5em 2em;
   text-transform: none;
-  opacity: 0;
-  -webkit-transform: translate3d(0,-10px,0);
-  transform: translate3d(0,-10px,0);
+  opacity: 1;
 }
 
 
 .wedding-info img,
 .wedding-info h2{
-  margin-top: 75px;
-  margin-bottom: 20px;
-  -webkit-transform: translate3d(0,-30px,0);
-  transform: translate3d(0,-30px,0);
+  margin-top: 45px;
+  margin-bottom: 45px;
+
 }
 
 .wedding-info img{
     margin-top: 100px;
-    border: 9px solid rgba(255, 255, 255, 1);
+    border: 9px solid lightgray;
     border-radius: 5px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 
-.wedding-info img,
-.wedding-info::before,
-.wedding-info::after,
-.wedding-info p{
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-}
 
-.wedding-info:hover img {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
 
-.wedding-info:hover wedding-info::before,
-.wedding-info:hover wedding-info::after{
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
 
-.wedding-info:hover h2,
-.wedding-info:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
+/*----------------------------*/
+/********** RSVP   ************/
+/*----------------------------*/
 
-.wedding-info:hover .wedding-info::after,
-.wedding-info:hover h2,
-.wedding-info:hover p,
-.wedding-info:hover img {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
+
 
 /*----------------------------*/
 /***** Spacers and extras *****/
@@ -752,6 +636,7 @@ background-color: #0b0d21;
 .my_divider img{
   width: auto;
   margin: 0 auto;
+  padding-bottom:10em;
   display:block;
   /*margin: 70px 25%;*/
 }

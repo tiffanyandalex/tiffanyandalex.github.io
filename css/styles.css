@@ -15,10 +15,10 @@
 }
 
 /* Custom Stylesheet */
- @font-face { 
+/* @font-face { 
   font-family: 'Roskrift'; 
   src: url('fonts/roskrift/Roskrift.ttf'); 
-} 
+} */
 /* @font-face { 
   font-family: 'Roskrift_clean'; 
   src: url('fonts/roskrift_clean/Roskrift_Clean.ttf'); 
@@ -28,7 +28,7 @@
 
 body {
   font-family: 'Josefin Slab';
-  font-size: 14px;
+  font-size: 16px;
 
 }
 

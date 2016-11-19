@@ -142,7 +142,7 @@
 }
 
 .group6b{ /*about her - light gray-fog*/
-  background:#b8c3cd;
+  background:#bfc2c5;
   position: relative;
   min-height:90vh;
 }
@@ -152,7 +152,7 @@
  .group8{ /*wedding info - green*/
   z-index: 1;
   min-height: 200vh;
-  background-color: #021000;
+  background-color: #100f00;
   background-image: url("https://www.transparenttextures.com/patterns/zig-zag.png");
   will-change: top;
 }
@@ -161,7 +161,7 @@
 }
  .group10{ /*RSVP*/
   z-index: 0;
-  background-color: #521d13;
+  background-color: #351812;
   min-height: 100vh;
   /*min-height:1400px;*/
   will-change: top;
@@ -315,47 +315,47 @@
 
 .parallax_layer--bike1 {
   transform: translateZ(-1.75px) scale(2.75);
-  background-image: url("../img/bike/tinified/artflow_201609212124.jpg");
+  background-image: url("../img/bike/tinified/layer_1.jpg");
   z-index: -10;
   position: absolute;
   background-size: cover;
   width: 102%;
 }
 .parallax_layer--bike2 {
-  background-image: url("../img/bike/tinified/artflow_201609212220.png"); /*mountain*/
+  background-image: url("../img/bike/tinified/layer_2.png"); /*mountain*/
   transform: translateZ(-1.5px) scale(2.5);
   z-index: -9;
   position: absolute;
 }
 .parallax_layer--bike2b {
   transform: translateZ(-1.2px) scale(2.2);
-  background-image: url("../img/bike/tinified/artflow_201609220948.png"); /*fog and birds*/
+  background-image: url("../img/bike/tinified/layer_3.png"); /*fog and birds*/
   z-index: -8;
   position: absolute;
   background-size: cover;
   width: 102%;
 }
 .parallax_layer--bike3 {
-  background-image: url("../img/bike/tinified/artflow_201609221310.png"); /*water*/
+  background-image: url("../img/bike/tinified/layer_4.png"); /*water*/
   transform: translateZ(-1px) scale(2);
   z-index: -7;
   position: absolute;
 }
 .parallax_layer--bike4 {
-  background-image: url("../img/bike/tinified/artflow_201609221141.png"); /*bridge*/
+  background-image: url("../img/bike/tinified/layer_5.png"); /*bridge*/
   z-index: -6;
   transform: translateZ(-.8px) scale(1.8);
   position: absolute;
 }
 
 .parallax_layer--bike5 {
-  background-image: url("../img/bike/tinified/artflow_201609221157.png"); /*grass-back*/
+  background-image: url("../img/bike/tinified/layer_6.png"); /*grass-back*/
   z-index: -4;
   transform: translateZ(-.5px) scale(1.5);
   position: absolute;
 }
 .parallax_layer--bike6 {
-  background-image: url("../img/bike/tinified/artflow_201609221258.png");
+  background-image: url("../img/bike/tinified/layer_7.png");
   z-index: -3;
   transform: translateZ(-.25px) scale(1.25);
   position: absolute;
@@ -363,7 +363,7 @@
 
 
 .parallax_layer--bike7 {
-  background-image: url("../img/bike/tinified/artflow_201609212217.png");
+  background-image: url("../img/bike/tinified/layer_8.png");
   z-index: 0;
   position: absolute;
 }

@@ -625,7 +625,7 @@ a:hover{
 
     .iframe-container { 
         width:100vw; 
-        overflow: hidden; 
+        /*overflow: hidden; */
       }
 }  
 

@@ -619,11 +619,11 @@ a:hover{
 
 @media (max-width: 767px) {
     iframe {
-        max-width: calc(100vw + 40px) !important;   
-        margin: -11px -25px;
+        max-width: calc(90vw) !important;   
+/*        margin: -11px -25px;*/
       }
 
-    .iframe-wrapper { 
+    .iframe-container { 
         width:100vw; 
         overflow: hidden; 
       }

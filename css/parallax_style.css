@@ -162,7 +162,7 @@
  .group10{ /*RSVP*/
   z-index: 0;
   background-color: #351812;
-  min-height: 100vh;
+  min-height: 180vh;
   /*min-height:1400px;*/
   will-change: top;
 }

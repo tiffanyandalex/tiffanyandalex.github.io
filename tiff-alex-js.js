@@ -4,6 +4,15 @@ $(document).ready(function(){
         currentDistanceFromTop = 0,
         targetTop = 0;
 
+
+    $(window).load(function() {
+        // Animate loader off screen
+        $("#loader-wrapper").fadeOut("slow");
+    //     setTimeout(function(){
+    //         $("#loader-wrapper").fadeOut("slow");
+    // }, 2000);
+    });
+
     //Init carousel
     $(function(){
         $('.carousel').each(function(index) {

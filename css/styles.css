@@ -89,6 +89,13 @@ h4{
   text-align: center;
   margin-bottom: 10px;
 }
+h5{
+  font-family: serif;
+  font-size: 3.5em;
+  font-weight:100;
+  color: #BCA371;
+  text-align: center;
+}
 
 
 p{
@@ -108,27 +115,92 @@ a:hover{
   color:#B3C0A4;
 }
 
-.our_story {
-  text-align: center;
-  margin-top: 100px;
-  background-image:url("../img/our_story_paint.png");
-  background-position:top;
-  background-repeat:no-repeat;
+
+
+/*---------LOADER-------------*/
+#loader-wrapper{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #222222;
+  z-index: 1000;
 }
 
-
-
-
-
-.acknowledgements{
-    background-color: #351812;
-    margin-bottom: 0px;
+#loader-wrapper h2 {
+    padding-top:20vh;
+    font-color: #E5ECE9;
 }
+#loader {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #246A73;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #DB9D47;
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF715B;
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+} 
 
-.acknowledgements p{
-  text-align: center;
-  color: gray;
-  z-index:100;
+.no-js #loader-wrapper {
+    display: none;
 }
 
 /*--------INTRODUCTION------------*/
@@ -149,6 +221,15 @@ a:hover{
 
 /*----------------TIMELINE--------------*/
 
+.our_story {
+  text-align: center;
+  margin-top: 100px;
+  background-image:url("../img/our_story_paint.png");
+  background-position:top;
+  background-repeat:no-repeat;
+}
+
+
 .timeline .row{
   height: 200px;
 }
@@ -166,10 +247,6 @@ a:hover{
 .timeline .t-text::before{
   content: '';
   position: absolute;
-/*  left: -15px;
-  top: 100px;
-  width: 25px;
-  height: 25px;*/
   left:-.6em;
   top: 100px;
   width: 1em;
@@ -619,8 +696,6 @@ a:hover{
   border-bottom: 2.5px dashed #505050;
 }
 .rsvp-button-container{
-  padding-top:1em;
-  padding-bottom:1em;
   text-align: center;
 }
 
@@ -628,7 +703,7 @@ a:hover{
   display: block;
   max-width:15em;
   height: auto;
-  margin: 100px auto;
+  margin: 50px auto;
   box-shadow: 8px 8px 4px rgba(0, 0, 0,0.4);
 }
 
@@ -648,7 +723,18 @@ a:hover{
 
 .acknowledgements h3{
   padding-top: 150px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
+}
+
+.acknowledgements{
+    background-color: #351812;
+    margin-bottom: 0px;
+}
+
+.acknowledgements p{
+  text-align: center;
+  color: gray;
+  z-index:100;
 }
 
 /*----------------------------*/

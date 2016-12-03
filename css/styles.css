@@ -31,7 +31,7 @@ body {
 ul {
   list-style-type: none;
   /*margin-right: 80px;*/
-  margin-right: 8em;
+  margin-right: 5em;
 }
 
 
@@ -107,7 +107,7 @@ p{
 }
 
 a {
-  color: #EFC88B;
+  color: #B3C0A4;
   text-decoration:underline;
 }
 
@@ -395,14 +395,13 @@ a:hover{
   bottom: 0;
   position: relative;
   padding-bottom:50px;
-  border-bottom: 2.5px dashed #f4f4f3;
 }
 .about-him h2, .about-him p{
   color: #bac3cc;
 }
 .about-us-text h2{
   font-size:3em;
-  padding: 20px;
+  padding: 0;
 }
 .about-her{
   height: 75%;
@@ -411,7 +410,7 @@ a:hover{
   padding-top: 100px;
   position: relative;
   background: url(https://www.transparenttextures.com/patterns/white-linen.png) repeat;
-  border-top: 2.5px dashed #f4f4f3;
+
 }
 .about-her h2, .about-her p{
   color: #080d1c;
@@ -447,7 +446,6 @@ a:hover{
 /*-------------------ABOUT US CAROUSELS-----------*/
 .about-us-carousel {
   align-self: center;
-  margin: auto;
   width: 90%;
   height: 450px;
   display: block;/*
@@ -636,15 +634,15 @@ a:hover{
 
 
 .group8 h3{
-  color: #DBCFB0;
+  color: #979B8D;
 }
 
 .wedding-info h4{
-  color: #DBCFB0;
+  color: #a5987e;
 }
 
 .wedding-info p{
-  color:#DBCFB0;
+  color:#979B8D;
   text-align: center;
   padding: 0.5em 2em;
 }
@@ -674,8 +672,8 @@ a:hover{
 
 .wedding-info img{
   margin-bottom: 45px;
-  margin-top: 100px;/*
-  border: 9px solid lightgray;*/
+  margin-top: 100px;
+  border: 9px solid #717C89 /*#23395B*/;
   border-radius: 5px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
@@ -728,13 +726,22 @@ a:hover{
 
 .acknowledgements{
     background-color: #351812;
-    margin-bottom: 0px;
+    padding-bottom:100px;
 }
 
-.acknowledgements p{
-  text-align: center;
+.footer{
+  position:absolute;
+  bottom:0%;
+  padding;bottom:15px;
+  left: 50%;
+  transform: translateX(-50%);
+    
+}
+
+.footer p{
   color: gray;
   z-index:100;
+  text-align: center;
 }
 
 /*----------------------------*/

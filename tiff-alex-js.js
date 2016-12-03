@@ -6,11 +6,11 @@ $(document).ready(function(){
 
 
     $(window).load(function() {
-        // Animate loader off screen
+        //Animate loader off screen
         $("#loader-wrapper").fadeOut("slow");
     //     setTimeout(function(){
     //         $("#loader-wrapper").fadeOut("slow");
-    // }, 2000);
+    // }, 1500);
     });
 
     //Init carousel

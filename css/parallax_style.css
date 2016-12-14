@@ -27,7 +27,7 @@
 /*Different aspect ratios--tablets and monitors*/
 @media screen and (max-aspect-ratio: 4/3) and (min-width : 768px){
   .parallax_group{
-      min-height:120vh;
+      min-height:110vh;
   }
 }
 /*min aspect ratio 1.33*/
@@ -41,7 +41,7 @@
 @media screen and (min-aspect-ratio: 16/10) and (min-width : 768px){
 .parallax_group{
       /*min-height: 130vh;*/
-      min-height:110vh;
+      min-height:115vh;
   }
 }
 
@@ -50,7 +50,7 @@
   .parallax_group{
       /*min-height: 850px;*/
       /*min-height: 130vh;*/
-      min-height:110vh;
+      min-height:115vh;
   }
 }
 

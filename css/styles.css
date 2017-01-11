@@ -1,15 +1,12 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 740px){
-/*  .carousel {
-    height:300px;
-    visibility: visible;
-  }*/
-  .carousel-gallery, .about-us-text, .about-us-carousel, .intro{
+
+  .carousel-gallery, .about-us-text, .about-us-carousel, .intro h1{
     visibility: visible;
   }
 }
 
 @media only screen and (min-device-width : 741px) {
-    .carousel-gallery, .about-us-text, .about-us-carousel, .intro{
+    .carousel-gallery, .about-us-text, .about-us-carousel, .intro h1{
     visibility: hidden;
   }
 }
@@ -205,8 +202,8 @@ a:hover{
 
 /*--------INTRODUCTION------------*/
 
-.intro.in-view {
-  animation-name: fadeInUp;
+.intro.in-view h1{
+  animation-name: fadeIn;
   animation-duration: 1s;
   visibility: visible;
 }
@@ -419,7 +416,7 @@ a:hover{
 .about-us-text{
  /* visibility: hidden;*/
 }
-.about-him .about-us-text.in-view{
+.about-him .row.in-view .about-us-text{
   animation-name: fadeInRight;
   animation-duration: 1s;
   visibility:visible;
@@ -428,7 +425,7 @@ a:hover{
   padding-right: 100px;
   padding-bottom:50px;
 }
-.about-her .about-us-text.in-view{
+.about-her .row.in-view .about-us-text{
   animation-name: fadeInLeft;
   animation-duration: 1s;
   visibility: visible;
@@ -505,13 +502,13 @@ a:hover{
   left: 55%;
 }
 
-.carousel-alex.in-view {
+.row.in-view .carousel-alex{
   animation-name: fadeInLeft;
   animation-duration: 1s;
   visibility: visible;
 }
 
-.carousel-tiff.in-view {
+.row.in-view .carousel-tiff{
   animation-name: fadeInRight;
   animation-duration: 1s;
   visibility: visible;
@@ -673,7 +670,7 @@ a:hover{
 .wedding-info img{
   margin-bottom: 45px;
   margin-top: 100px;
-  border: 9px solid #717C89 /*#23395B*/;
+  border: 9px solid #717C89;
   border-radius: 5px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
@@ -710,10 +707,6 @@ a:hover{
   animation-duration: .5s;
 }
 
-/*@media (max-width: 767px) {
-    iframe {
-        max-width: calc(90vw) !important;   
-      }
 
 /*----------------------------*/
 /**** ACKNOWLEDGEMENTS   *****/

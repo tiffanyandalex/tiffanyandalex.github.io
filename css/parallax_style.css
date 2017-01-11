@@ -41,7 +41,7 @@
 @media screen and (min-aspect-ratio: 16/10) and (min-width : 768px){
 .parallax_group{
       /*min-height: 130vh;*/
-      min-height:115vh;
+      min-height:120vh;
   }
 }
 
@@ -50,7 +50,7 @@
   .parallax_group{
       /*min-height: 850px;*/
       /*min-height: 130vh;*/
-      min-height:115vh;
+      min-height:125vh;
   }
 }
 

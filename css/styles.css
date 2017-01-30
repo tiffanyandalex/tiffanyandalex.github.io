@@ -251,44 +251,44 @@ p{
     left: -.45em !important;
   }
 }
-.t-text p{
-  padding-left: 1.5em;
-  color:gray;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
-  transform: scale(0.9, 0.9);
-  display: table-cell;
-  vertical-align: middle;
-  visibility: hidden;
-  transition: all 0.5s ease-in-out;
-}
-
 .t-text p.in-view{
   animation-name: fadeIn;
   animation-duration: 1s;
   visibility: visible;
 }
 
-.t-date h4{
-  font-size: 2.5em;
-  color:gray;;
-  margin: 0;
-  display: table-cell;
-  vertical-align: middle;
-  text-shadow: 4px 3px rgba(0, 0, 0, 0.8);
-}
-.t-date {
-  transform: scale(0.9,0.9);
-  visibility: hidden;
-  transition: all 0.5s ease-in-out;
-  display: table;
-}
-
-.t-date.in-view{
+.t-date h4.in-view{
   animation-name: fadeIn;
   animation-duration: 1s;
   visibility: visible;
 }
 
+.t-text p{
+  padding-left: 1.5em;
+  color:lightgray;
+  filter:brightness(30%);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+  transform: scale(0.9, 0.9);
+  display: table-cell;
+  vertical-align: middle;
+  visibility: hidden;
+  transition: all 0.7s ease;
+}
+
+.t-date h4{
+  font-size: 2.5em;
+  filter:brightness(30%);
+  margin: 0;
+  text-shadow: 4px 3px rgba(0, 0, 0, 0.8);
+  transform: scale(0.9, 0.9);
+  display: table-cell; 
+  vertical-align: middle;
+  visibility: hidden;
+  transition: all .7s ease;
+}
+.t-date {
+  display: table;
+}
 .t-pic {
     line-height: 200px;
 }
@@ -296,7 +296,7 @@ p{
   position: relative;
   height: auto;
   max-height:200%;
-  opacity:0;
+  filter:brightness(30%);
   transition: all 0.7s ease-in-out;
   border: 0.47em solid lightgrey;
   box-shadow:4px 3px rgba(0, 0, 0, 0.8);
@@ -315,28 +315,29 @@ p{
 
 .timeline .row:hover p{
   transform: scale(1, 1);
-  color:lightgray;
-  transition: all 0.5s ease-in-out;
+  filter:brightness(100%);
+
 }
 
-.timeline .row:hover .t-date{
-  transform: scale(1,1);
-  transition: all 0.5s ease-in-out;
-}
+
 .timeline .row:hover h4{
-  transition: all 1s ease-in-out;
-  color: #BCA371;
+  transform: scale(1, 1);
+  filter:brightness(100%);
+  
 }
 
 .timeline .row:nth-child(even):hover img{
-  opacity: 1;
   transform: scale(1,1) rotate(4deg);
-  transition: all 0.5s ease-in-out; 
+  filter:brightness(100%);
+  z-index:3;
+  transition: all .7s ease; 
 }
+
 .timeline .row:nth-child(odd):hover img{
-  opacity: 1;
   transform: scale(1,1) rotate(-4deg);
-  transition: all 0.5s ease-in-out; 
+  z-index:3;
+  filter:brightness(100%);
+  transition: all .7s ease; 
 }
 
 .timeline {

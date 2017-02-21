@@ -38,7 +38,7 @@ ul {
   color:white;
   text-align: center;
   padding-top: 5em;
-  padding-bottom: 4.5em;
+  padding-bottom: 3em;
   width: 100%;
   background-image: url("../img/paint.png");
   background-repeat: no-repeat;
@@ -91,6 +91,14 @@ h5{
   font-size: 3.5em;
   font-weight:100;
   color: #BCA371;
+  text-align: center;
+}
+h6{
+  font-family: 'Amatic SC';
+  font-size: 1.8em;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #aba78b;
   text-align: center;
 }
 
@@ -207,6 +215,32 @@ p{
   background: url(https://www.transparenttextures.com/patterns/dark-tire.png) repeat;
   padding: 10px;
   padding-bottom: 130px;
+}
+
+.btn-skip{
+    background-color: transparent;
+    color: #aba78b;
+    border: solid 2px #aba78b;
+    border-radius:2px;
+    text-align: center;
+    text-decoration:none;
+    padding: 4px 14px;
+    margin: 10px auto;
+    box-shadow: 0px 1px 3px #666666;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    position:relative;
+}
+
+.btn-skip:hover{
+    color: black;
+    background-color: #aba78b;
+}
+a.btn-skip {
+  color: #aba78b;
+  text-decoration:none;
 }
 
 /*----------------TIMELINE--------------*/
@@ -341,7 +375,7 @@ p{
 }
 
 .timeline {
-  padding-bottom:4.5em;
+  padding-bottom:6em;
 }
 /*----------------GALLERY-----------*/
 
@@ -672,7 +706,7 @@ p{
 
 
 .btn-transparent{
-    font-size: 18px;
+    /*font-size: 18px;*/
     font-weight: 700;
     background-color: transparent;
     color: #979B8D;
@@ -775,7 +809,8 @@ a:hover{
 .my_divider img{
   width: auto;
   margin: 0 auto;
-  padding-bottom:10em;
+  padding:4em 0;
   display:block;
+  opacity:0.5;
   /*margin: 70px 25%;*/
 }

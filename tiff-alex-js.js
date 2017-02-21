@@ -19,7 +19,7 @@ $(document).ready(function(){
             // console.log( index + ": " + $( this ).text() );
             var _this = $(this);
             var slickOptions = {
-                dots: true,
+                dots: false,
                 infinite: true,
                 slidesToShow: 1,
                 autoplay: false,

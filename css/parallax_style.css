@@ -54,15 +54,19 @@
   }
 }
 
-/* Mobile */
-@media only screen and (min-width : 320px) and (max-width : 740px) {
+/* Mobile portrait*/
+@media only screen and (min-width : 320px) and (max-width : 740px) and (orientation: portrait){
 .parallax_group{
       min-height:110vh;
   }
-
-
 }
 
+/* Mobile landscape*/
+@media only screen and (min-width : 320px) and (max-width : 740px) and (orientation: landscape){
+.parallax_group{
+      min-height:63vw;
+  }
+}
 /* ================================= */
 /* :::::::: Parallax Layout :::::::: */
 /* ================================= */

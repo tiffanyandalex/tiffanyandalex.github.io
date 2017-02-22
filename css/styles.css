@@ -756,7 +756,7 @@ a:hover{
   max-width:15em;
   height: auto;
   margin: 50px auto;
-  box-shadow: 8px 8px 4px rgba(0, 0, 0,0.4);
+  box-shadow: 10px 14px 6px rgba(0, 0, 0, 0.5);
 }
 
 .rsvp-button:hover{

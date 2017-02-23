@@ -16,7 +16,6 @@ $(document).ready(function(){
     //Init carousel
     $(function(){
         $('.carousel').each(function(index) {
-            // console.log( index + ": " + $( this ).text() );
             var _this = $(this);
             var slickOptions = {
                 dots: false,
@@ -28,13 +27,13 @@ $(document).ready(function(){
                 fade: true,
                 adaptiveHeight: false,
                 arrows: true,
+
+
             };
             $(this).slick(slickOptions).slick('slickFilter', 'div');
         })
     });
 
-
-    // $('.carousel').slick(slickOptions);
 
     //---------------------NAVIGATION----------------------//
     updateNavigation();

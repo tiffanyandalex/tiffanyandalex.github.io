@@ -17,22 +17,19 @@
   src: url('fonts/Bombshell Pro.ttf'); 
 } 
 
-
-
 body {
   font-family: 'Josefin Slab';
   font-size: 16px;
-
 }
 
 ul {
   list-style-type: none;
-  /*margin-right: 80px;*/
   margin-right: 5em;
 }
 
-
-/*-------------HEADERS--------------*/
+/*-------------------------------------------*/
+/*--------------HEADERS----------------------*/
+/*-------------------------------------------*/
 
 .intro{
   color:white;
@@ -114,8 +111,10 @@ p{
 
 
 
+/*-------------------------------------------*/
+/*---------------LOADER----------------------*/
+/*-------------------------------------------*/
 
-/*---------LOADER-------------*/
 #loader-wrapper{
   position: fixed;
   top: 0;
@@ -201,7 +200,130 @@ p{
     display: none;
 }
 
-/*--------INTRODUCTION------------*/
+
+/*-------------------------------------------*/
+/*------------NAVIGATION---------------------*/
+/*-------------------------------------------*/
+
+.cd-nav-trigger {
+  display: none;
+}
+
+.no-touch #cd-vertical-nav {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.no-touch #cd-vertical-nav:hover span{
+  opacity:0.5;
+  transform: scale(0.75);
+  transition-duration: 0.75s;
+}
+
+.no-touch #cd-vertical-nav li {
+  text-align: right;
+}
+.no-touch #cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.no-touch #cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  display: inline-block;
+  opacity:0.5;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+.no-touch #cd-vertical-nav a:hover span {
+  opacity:1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.no-touch #cd-vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white;
+}
+.no-touch #cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 16px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.no-touch #cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: .02em .02em;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+  font-family: 'Amatic SC';
+  /*font-size: 16px;*/
+  font-size: 3.1rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.1s;
+  transition: transform 0.2s, opacity 0.1s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.touch #cd-vertical-nav {
+  position: fixed;
+  z-index: 1;
+  right: 5%;
+  bottom: 30px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+.touch #cd-vertical-nav.open {
+  transform: scale(1);
+}
+
+
+
+
+/*-------------------------------------------*/
+/*---------------INTRODUCTION----------------*/
+/*-------------------------------------------*/
 
 .intro.in-view h1{
   animation-name: fadeIn;
@@ -243,7 +365,9 @@ a.btn-skip {
   text-decoration:none;
 }
 
-/*----------------TIMELINE--------------*/
+/*-------------------------------------------*/
+/*--------------------TIMELINE---------------*/
+/*-------------------------------------------*/
 
 .our_story {
   text-align: center;
@@ -357,7 +481,6 @@ a.btn-skip {
 .timeline .row:hover h4{
   transform: scale(1, 1);
   filter:brightness(100%);
-  
 }
 
 .timeline .row:nth-child(even):hover img{
@@ -377,7 +500,10 @@ a.btn-skip {
 .timeline {
   padding-bottom:6em;
 }
+
+/*-----------------------------------*/
 /*----------------GALLERY-----------*/
+/*-----------------------------------*/
 
 .gallery {
   margin-top: 0;
@@ -468,27 +594,36 @@ a.btn-skip {
 }
 
 
+/*------------------------------------------------*/
 /*-------------------ABOUT US CAROUSELS-----------*/
+/*------------------------------------------------*/
+
 .about-us-carousel {
   align-self: center;
   width: 90%;
   height: 450px;
-  display: block;/*
-  visibility: hidden;*/
+  display: block;
+  margin-bottom:100px;
 }
+
 .about-us-carousel img {
   position: relative;
-  vertical-align: bottom;
   max-width: 100%;
   max-height: 450px;
-  display: block;
+  /*display: block;*/
   margin: auto;
   border-width: .6em; 
   border-style: solid;
   border-color: #f1f1f1;
   background: rgba(240,230,220, .7);
   box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+
+    vertical-align: middle;
+    display: inline-block;
+
 }
+
+
 
 #nav_container {
   overflow: visible;
@@ -503,9 +638,6 @@ a.btn-skip {
   display: inline-block;
 }
 
-.slider-nav .slick-arrow {
-  display: inline-block;
-}
 
 .slider-nav .slick-dots {
   margin: 0 10px;
@@ -543,119 +675,9 @@ a.btn-skip {
 }
 
 
-/*-------------------------------------------*/
-/*------------NAVIGATION---------------------*/
-/*-------------------------------------------*/
-
-.cd-nav-trigger {
-  display: none;
-}
-
-.no-touch #cd-vertical-nav {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 1;
-}
-.no-touch #cd-vertical-nav li {
-  text-align: right;
-}
-.no-touch #cd-vertical-nav a {
-  display: inline-block;
-  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
-  backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.no-touch #cd-vertical-nav a:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.no-touch #cd-vertical-nav a span {
-  float: right;
-  display: inline-block;
-  opacity:0.5;
-  -webkit-transform: scale(0.6);
-  -moz-transform: scale(0.6);
-  -ms-transform: scale(0.6);
-  -o-transform: scale(0.6);
-  transform: scale(0.6);
-}
-.no-touch #cd-vertical-nav a:hover span {
-  opacity:1;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-.no-touch #cd-vertical-nav a:hover .cd-label {
-  opacity: 1;
-}
-.no-touch #cd-vertical-nav a.is-selected .cd-dot {
-  background-color: white;
-}
-.no-touch #cd-vertical-nav .cd-dot {
-  position: relative;
-  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-  top: 16px;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  background-color: white;
-  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
-  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
-  transition: transform 0.2s, background-color 0.5s;
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-.no-touch #cd-vertical-nav .cd-label {
-  position: relative;
-  margin-right: 10px;
-  padding: .02em .02em;
-  color: white;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
-  font-family: 'Amatic SC';
-  /*font-size: 16px;*/
-  font-size: 2.9rem;
-  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-  transition: transform 0.2s, opacity 0.2s;
-  opacity: 0;
-  -webkit-transform-origin: 100% 50%;
-  -moz-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  -o-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
-}
-
-.touch #cd-vertical-nav {
-  position: fixed;
-  z-index: 1;
-  right: 5%;
-  bottom: 30px;
-  width: 90%;
-  max-width: 400px;
-  max-height: 90%;
-  transform: scale(0);
-  transition-property: transform;
-  transition-duration: 0.2s;
-}
-.touch #cd-vertical-nav.open {
-  transform: scale(1);
-}
-/*---------------*/
-/** Wedding info */
-/*---------------*/
+/*------------------------------------------------*/
+/**------------ Wedding info ---------------------*/
+/*------------------------------------------------*/
 
 
 .group8 h3{
@@ -737,6 +759,7 @@ a:hover{
   color: black;
   text-decoration:none;
 }
+
 /*----------------------------*/
 /********** RSVP   ************/
 /*----------------------------*/

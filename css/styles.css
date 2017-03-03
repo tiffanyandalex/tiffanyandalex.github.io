@@ -681,7 +681,7 @@ a.btn-skip {
 
 
 .group8 h3{
-  color: #979B8D;
+  color: #acb1a2;
 }
 
 .wedding-info h4{
@@ -689,7 +689,7 @@ a.btn-skip {
 }
 
 .wedding-info p{
-  color:#979B8D;
+  color:#acb1a2;
   text-align: center;
   padding: 0.5em 2em;
 }
@@ -776,10 +776,10 @@ a:hover{
 
 .rsvp-button{
   display: block;
-  max-width:15em;
+  max-width:18em;
   height: auto;
-  margin: 50px auto;
-  box-shadow: 10px 14px 6px rgba(0, 0, 0, 0.5);
+  margin: 50px auto;/*
+  box-shadow: 10px 14px 6px rgba(0, 0, 0, 0.5);*/
 }
 
 .rsvp-button:hover{
@@ -819,6 +819,7 @@ a:hover{
 
 .mason_jar{
   display: block;
+  max-width:15em;
   margin: 0px auto;
   padding-bottom:100px;
 }
